@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HighLow HTML template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/521a1bbb-4492-4625-bae8-58bf3edd68bf.css"/>
+        <link href="public/css/highlow.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!--[if lt IE 9]>
+            <link href="public/css/ie8.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <![endif]-->
+
+
+        <!--[if lt IE 9]>
+        
+        <script src="public/js/html5shiv.min.js"></script>
+        <script src="public/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div id="user-bar" class="sticky-strip">
+  <div class="content">
+    <div class="container clearfix visible-logged-in">
+      <div class="pull-left site-settings">
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="jp"><b>日本語</b></span> <span class="icon drop-down"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#"><span class="jp"><b>日本語</b></span></a></li>
+          </ul>
+        </a>
+        <span class="hidden-xs hidden-sm">
+          <span id="date">15 June, 2014</span> <span id="time">17:28:01</span> <span id="timezone">[Syd]</span>
+        </span>
+      </div>
+      <div class="pull-right login">
+        <span class="icon user-small-borderless"></span> Welcome <span id="username">Jon</span> <a href="#" id="logout-trigger-button" class="btn btn-alternate btn-sm">LOG OUT</a>
+      </div>
+    </div>
+    <div class="container clearfix hidden-logged-in">
+      <div class="pull-left site-settings">
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <span class="icon drop-down"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">日本語</a></li>
+          </ul>
+        </a>
+        <span class="hidden-xs hidden-sm">
+          <span id="date">15 June, 2014</span> <span id="time" class="highlight">17:28:01</span> <span id="timezone" class="highlight">[Syd]</span>
+        </span>
+      </div>
+      <div class="pull-right login"><span class="icon move-in hidden-xs"></span> <a id="go-to-full-demo" href="#" data-toggle="modal" data-target="#demo-signup-popup" class="highlight hidden-xs">Full demo</a>
+        <span class="icon user-small-borderless"></span> <span class="hidden-xs">Existing user?</span> <a id="username" class="highlight" href="#" data-toggle="modal" data-target="#signin-popup">Log in</a> <a href="signup-form.html" class="btn btn-alternate btn-sm"><span class="hidden-xs">JOIN NOW - IT'S FREE</span><span class="hidden-sm hidden-md hidden-lg visible-xs">JOIN NOW FREE!</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" role="navigation" id="common-nav">
+  <div class="content">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href='highlow.html' class="high-low pull-left icon"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="trade-platform.html">TRADE</a></li>
+          <li><a href="highlow.html">HIGHLOW</a></li>
+          <li><a href="why-highlow.html">WHY HIGHLOW?</a></li>
+          <li class="dropdown last-child">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="icon drop-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="how-to-trade.html">HOW TO TRADE</a></li>
+              <li><a href="faq.html">FAQ&rsquo;s</a></li>
+              <li><a href="expiry-rate.html">EXPIRY RATES</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="option-schedules.html">OPTIONS SCHEDULE</a></li>
+              <li><a href="app-page.html">APPS DOWNLOAD</a></li>
+              <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </div>
+</nav>
+<div class="modal fade" id="signin-popup" tabindex="-1" role="dialog" > 
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="signin-popup-label"> <span class="icon user-border-less"></span> SIGN IN TO HIGHLOW  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-wrapper padding-less">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="input-wrap label-on-top">
+                    <label>Username</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-wrap label-on-top">
+                    <label>Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="modal-footer-pseudo-table">
+            <div class="row">
+              <small class="col-sm-6">
+                <a href="index.html">Forgot your password?</a>
+              </small>
+              <div class="col-sm-6 modal-action">
+                <button id="login-trigger-button" class="btn btn-default btn-lg btn-extruded pull-right">
+                  SIGN IN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-large" id="demo-signup-popup" tabindex="-1" role="dialog" > 
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="demo-signup-popup-label">SIGN UP FOR THE FULL <strong>100% FREE</strong> DEMO  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+        </div>
+        <div class="modal-body">
+          <p>Complete the form below for your free 30 day trial.</p>
+          <div class="form-wrapper padding-less">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label><span>First Name*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Last Name*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Country*</label>
+                    <div class="input-wrap">
+                      <select class="form-control">
+                        <option>Select your country</option>
+                        <option>Australia</option>
+                        <option>Japan</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Contact Number*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Email*</label>
+                    <div class="input-wrap">
+                      <input type="email" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Referal source*</span></label>
+                    <div class="input-wrap">
+                      <select class="form-control">
+                        <option>Select source</option>
+                        <option>Friends</option>
+                        <option>Trading blog</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 hidden-xs">
+                  <div class="content-wrapper">
+                    <div class="small-sub-title">LEARN AS YOU TRADE!</div>
+                    <ul>
+                      <li>
+                        Trade forex, indices, commodities &amp; Stocks
+                      </li>
+                      <li>
+                        Use $20,000 virtual funds
+                      </li>
+                      <li>
+                        Try HighLow, Spread HighLow and On Demand Binary Options
+                      </li>
+                      <li>
+                        Trade without spreads or charges
+                      </li>
+                      <li>
+                        No need to download – the program is web-based
+                      </li>
+                      <li>
+                        Know immediately how much you would gain/risk
+                      </li>
+                      <li>
+                        Trades from as little as USD10
+                      </li>
+                    </ul> 
+                  </div>
+                </div>  
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="modal-footer-pseudo-table">
+            <div class="row">
+              <small class="col-sm-6">
+                HIGHLOW protects the privacy of your personal information. View our <a href="">Privacy Policy</a>.
+              </small>
+              <div class="col-sm-6 modal-action">
+                <button class="wizard-next-step btn btn-default btn-lg btn-extruded pull-right">
+                  CREATE FREE DEMO ACCOUNT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+            <nav class="navbar navbar-default sticky-strip visible-logged-in" id="account-menu-bar-wrapper">
+	<div class="content">
+		<div id="account-menu-bar">
+			<div class="container clearfix">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#account-bar">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+			    <div id="account-balance">
+					<h4>
+						Account Balance
+					</h4>
+					<span id="balance">$20,548.00</span>
+					<span class="icon plus"></span>
+				</div>
+			    <div class="collapse navbar-collapse" id="account-bar">
+					<ul class="clearfix nav navbar-nav">
+						<li class="first-child">
+							<a href="">
+								Help Centre
+							</a>
+						</li>
+						<li>
+							<a href="">
+								View Trade Actions
+							</a>
+						</li>
+						<li class="dropdown last-child active">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">
+								My Account <span class="icon drop-down"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+					            <li><a href="my-account.html">Dashboard</a></li>
+					            <li><a href="my-account.html">My Details</a></li>
+					          </ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+        </header>
+        
+<div class="std-cont">
+	<div class="container">
+		<h1 class="section-title">EXPIRY RATE</h1>
+		<div class="row">
+			<div class="main-cont col-xs-12">
+				<p class="section-sub-title">
+					FOREX expiry rates for today, <b>Thursday 26 June, 2014</b>	
+				</p>
+				<div class="tab-full-width grey">
+					<div class="tab-selector-wrap">
+						<div class="tab-selector">
+							<ul class="nav nav-tabs" role="tablist">
+							  <li class="active"><a href="#fx-15-min" role="tab" data-toggle="tab"><img class="inactive-icon" src="public/images/finance.png"><img class="active-icon" src="public/images/finance-active.png">FX - 15 minutes</a></li>
+							  <li><a href="#fx-1-hr" role="tab" data-toggle="tab"><img class="inactive-icon" src="public/images/finance.png"><img class="active-icon" src="public/images/finance-active.png">FX - 1 hour</a></li>
+							  <li><a href="#fx-1-day" role="tab" data-toggle="tab"><img class="inactive-icon" src="public/images/finance.png"><img class="active-icon" src="public/images/finance-active.png">FX - 1 day</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Tab panes -->
+					<div class="tab-content-wrap">
+						<div class="tab-content">
+							<div class="tab-pane in active" id="fx-15-min">
+								<table class="table table-striped responsive" id="expiry-rate-table">
+									<thead>
+										<tr>
+											<th>
+												Expiry Time
+											</th>
+											<th>
+												AUD/USD
+											</th>
+											<th>
+												AUD/USD
+											</th>
+											<th>
+												AUD/USD
+											</th>
+											<th>
+												AUD/USD
+											</th>
+											<th>
+												AUD/USD
+											</th>
+											<th>
+												AUD/USD
+											</th>
+											<th>
+												AUD/USD
+											</th>
+											<th>
+												AUD/USD
+											</th>
+											<th>
+												AUD/USD
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>8.15 am</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>9.15 am</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>10.15 am</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>8.15 am</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>12.15 am</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>2.15 pm</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>4.15 pm</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>8.15 am</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>8.15 am</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>12.15 am</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>2.15 pm</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Expiry Time">
+												<b>4.15 pm</b>
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+											<td data-th="AUD/USD">
+												95.724
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tab-pane" id="fx-1-hr">
+								...
+							</div>
+							<div class="tab-pane" id="fx-1-day">
+								...
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cta-strip">
+					<div class="cta-strip-pseudo-row">
+						<p class="cta-strip-title section-sub-title"><img src="public/images/bolt.png"/>See how it all works and learn as you trade with our free demo&hellip;</p>
+						<div class="cta-wrap">
+							<div class="cta clearfix">
+								<a href="#" class="btn-alternate btn btn-extruded btn-lg pull-left">BEGIN DEMO</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+        <footer>
+	<div class="container-fluid kapitall-block">
+		<div class="clearfix kapitall-strip">
+	<div class="testi faded fade-able">
+	    <ul class="tcycle" data-fx="scroll" data-easing="" data-speed="750" data-timeout="3000">
+	    	<li class="first">
+	    		<h3><em>&ldquo;Binary trading lorem ipsum dolor sit amet!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li>
+	    		<h3><em>&ldquo;Re-inventing Binary Trading!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li>
+	    		<h3><em>&ldquo;Teaem cloer gekog Binary Trading!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li> 
+	    		<h3><em>&ldquo;Tires fedora core Binary Trading ubuntu nodejs!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    </ul>
+	</div>
+	<div class="rotating-strip fade-able">
+		<ul>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+		</ul>
+		<div id="rotating-strip-edge-left" class="icon">
+		</div>
+		<div id="rotating-strip-edge-right" class="icon">
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="container">
+		<div class="clearfix">
+			<div class="affiliation-wrapper">
+				<div class="affiliation">
+					<h3>
+						Lorem ipsum
+					</h3>
+					<div class="clearfix">
+						<div class="icon visa">
+						</div>
+						<div class="icon master">
+						</div>
+						<div class='icon neteller'>
+						</div>
+					</div>
+				</div>
+				<div class="affiliation">
+					<h3>
+						Lorem ipsum
+					</h3>
+					<div class="clearfix">
+						<div class="icon nab">
+						</div>
+						<div class="icon smbc">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-cta-wrapper">
+				<a href="" class="block" id="affiliate-login">
+					Affiliates login <img src="public/images/affiliate-icon.png"/>
+				</a>
+				<div id="footer-mobile-app-cta-mobile" class="">
+					<h3 class="block header">Download HighLow for your mobile</h3>
+					<div class="clearfix">
+						<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus" id="footer-android-icon" class="icon block pull-left">
+							Android
+						</a>
+						<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8" id="footer-apple-icon" class="icon block pull-right">
+							App Store
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="col-xs-12 keyline">
+			</div>
+			<div class="row-sm">
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Binary options</h4>
+					<ul>
+						<li>
+							<a href="highlow.html">
+								HIGHLOW
+							</a>
+						</li>
+						<li>
+							<a href="why-highlow.html">
+								Why HighLow?
+							</a>
+						</li>
+						<li>
+							<a href="contact-us.html">
+								Contact Us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								The HighLow advantage
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Our experience
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Start trading</h4>
+					<ul>
+						<li>
+							<a href="trade-platform.html">
+								Access Trading area
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#demo-signup-popup">
+								Access full demo
+							</a>
+						</li>
+						<li>
+							<a href="signup-form.html">
+								Join now
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#signin-popup">
+								Log in
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Resources</h4>
+					<ul>
+						<li>
+							<a href="about.html">About us</a>
+						</li>
+			            <li>
+			            	<a href="how-to-trade.html">How to trade</a>
+			            </li>
+			            <li>
+			            	<a href="faq.html">FAQ&rsquo;s</a>
+			            </li>
+			            <li>
+			            	<a href="expiry-rate.html">Expiry rates</a>
+			            </li>
+			            <li>
+			            	<a href="blog.html">Blog</a>
+			            </li>
+			            <li>
+			            	<a href="option-schedules.html">Options Schedules</a>
+			            </li>
+			            <li>
+			            	<a href="app-page.html">Apps Download</a>
+			            </li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-sm">
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Downloads</h4>
+					<ul>
+						<li>
+							<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8">
+								iPhone app
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus">
+								Android app
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Financial Services guide
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Download item A
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Download item B
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Legals</h4>
+					<ul>
+						<li>
+							<a href="">
+								Privacy Policy
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Disclaimer
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Terms and conditions
+							</a>
+						</li>
+						<li>
+							<a href="contact-us.html">
+								Contact Highlow
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer-mobile-app-cta" class="pull-right">
+				<h3 class="block header">Download HighLow for your mobile</h3>
+				<div class="clearfix">
+					<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus" id="footer-android-icon" class="icon block pull-left" id="footer-android-icon" class="icon block pull-left">
+						Android
+					</a>
+					<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8" id="footer-apple-icon" class="icon block pull-right">
+						App Store
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<h5>
+				General Advice Disclaimer
+			</h5>
+			<small>
+				This website is published and owned by Realtime Capital Markets Pty Ltd (ACN 143 553 628), holder of Australian Financial Services Licence number 364264. This licence authorises the licensee to carry on a financial services business in Australia, limited to providing the financial services covered by the licence. The products and services described on this site is not available for residents in countries where such distribution is not permitted by the laws of the country. The information contained in this website is of a general nature only, and does not take into account your personal circumstances, financial situation or needs. Dealing in binary options and our other over-the-counter derivative products carries significant risk, and you may lose all of your initial investments and in some cases, other than binary options, you may also incur losses that exceed your initial investments. You should read the Product Disclosure Statement for binary options dated 01/11/2013, the Financial Services Guide and consult your own professional advisors before deciding whether dealing in our financial products is suitable for you.
+			</small>
+		</div>
+	</div>
+</footer>
+        
+
+
+<script src="public/js/jquery-1.11.1.min.js"></script>
+
+<script src="public/js/isotope.pkgd.min.js"></script>
+<script src="public/js/jquery.cookie.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/jquery-ui.min.js"></script>
+<script src="public/js/highlow.min.js"></script>
+    </body>
+</html>

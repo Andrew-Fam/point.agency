@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HighLow HTML template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/521a1bbb-4492-4625-bae8-58bf3edd68bf.css"/>
+        <link href="public/css/highlow.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!--[if lt IE 9]>
+            <link href="public/css/ie8.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <![endif]-->
+
+
+        <!--[if lt IE 9]>
+        
+        <script src="public/js/html5shiv.min.js"></script>
+        <script src="public/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div id="user-bar" class="sticky-strip">
+  <div class="content">
+    <div class="container clearfix visible-logged-in">
+      <div class="pull-left site-settings">
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="jp"><b>日本語</b></span> <span class="icon drop-down"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#"><span class="jp"><b>日本語</b></span></a></li>
+          </ul>
+        </a>
+        <span class="hidden-xs hidden-sm">
+          <span id="date">15 June, 2014</span> <span id="time">17:28:01</span> <span id="timezone">[Syd]</span>
+        </span>
+      </div>
+      <div class="pull-right login">
+        <span class="icon user-small-borderless"></span> Welcome <span id="username">Jon</span> <a href="#" id="logout-trigger-button" class="btn btn-alternate btn-sm">LOG OUT</a>
+      </div>
+    </div>
+    <div class="container clearfix hidden-logged-in">
+      <div class="pull-left site-settings">
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <span class="icon drop-down"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">日本語</a></li>
+          </ul>
+        </a>
+        <span class="hidden-xs hidden-sm">
+          <span id="date">15 June, 2014</span> <span id="time" class="highlight">17:28:01</span> <span id="timezone" class="highlight">[Syd]</span>
+        </span>
+      </div>
+      <div class="pull-right login"><span class="icon move-in hidden-xs"></span> <a id="go-to-full-demo" href="#" data-toggle="modal" data-target="#demo-signup-popup" class="highlight hidden-xs">Full demo</a>
+        <span class="icon user-small-borderless"></span> <span class="hidden-xs">Existing user?</span> <a id="username" class="highlight" href="#" data-toggle="modal" data-target="#signin-popup">Log in</a> <a href="signup-form.html" class="btn btn-alternate btn-sm"><span class="hidden-xs">JOIN NOW - IT'S FREE</span><span class="hidden-sm hidden-md hidden-lg visible-xs">JOIN NOW FREE!</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" role="navigation" id="common-nav">
+  <div class="content">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href='highlow.html' class="high-low pull-left icon"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="trade-platform.html">TRADE</a></li>
+          <li><a href="highlow.html">HIGHLOW</a></li>
+          <li><a href="why-highlow.html">WHY HIGHLOW?</a></li>
+          <li class="dropdown last-child">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="icon drop-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="how-to-trade.html">HOW TO TRADE</a></li>
+              <li><a href="faq.html">FAQ&rsquo;s</a></li>
+              <li><a href="expiry-rate.html">EXPIRY RATES</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="option-schedules.html">OPTIONS SCHEDULE</a></li>
+              <li><a href="app-page.html">APPS DOWNLOAD</a></li>
+              <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </div>
+</nav>
+<div class="modal fade" id="signin-popup" tabindex="-1" role="dialog" > 
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="signin-popup-label"> <span class="icon user-border-less"></span> SIGN IN TO HIGHLOW  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-wrapper padding-less">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="input-wrap label-on-top">
+                    <label>Username</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-wrap label-on-top">
+                    <label>Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="modal-footer-pseudo-table">
+            <div class="row">
+              <small class="col-sm-6">
+                <a href="index.html">Forgot your password?</a>
+              </small>
+              <div class="col-sm-6 modal-action">
+                <button id="login-trigger-button" class="btn btn-default btn-lg btn-extruded pull-right">
+                  SIGN IN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-large" id="demo-signup-popup" tabindex="-1" role="dialog" > 
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="demo-signup-popup-label">SIGN UP FOR THE FULL <strong>100% FREE</strong> DEMO  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+        </div>
+        <div class="modal-body">
+          <p>Complete the form below for your free 30 day trial.</p>
+          <div class="form-wrapper padding-less">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label><span>First Name*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Last Name*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Country*</label>
+                    <div class="input-wrap">
+                      <select class="form-control">
+                        <option>Select your country</option>
+                        <option>Australia</option>
+                        <option>Japan</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Contact Number*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Email*</label>
+                    <div class="input-wrap">
+                      <input type="email" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Referal source*</span></label>
+                    <div class="input-wrap">
+                      <select class="form-control">
+                        <option>Select source</option>
+                        <option>Friends</option>
+                        <option>Trading blog</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 hidden-xs">
+                  <div class="content-wrapper">
+                    <div class="small-sub-title">LEARN AS YOU TRADE!</div>
+                    <ul>
+                      <li>
+                        Trade forex, indices, commodities &amp; Stocks
+                      </li>
+                      <li>
+                        Use $20,000 virtual funds
+                      </li>
+                      <li>
+                        Try HighLow, Spread HighLow and On Demand Binary Options
+                      </li>
+                      <li>
+                        Trade without spreads or charges
+                      </li>
+                      <li>
+                        No need to download – the program is web-based
+                      </li>
+                      <li>
+                        Know immediately how much you would gain/risk
+                      </li>
+                      <li>
+                        Trades from as little as USD10
+                      </li>
+                    </ul> 
+                  </div>
+                </div>  
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="modal-footer-pseudo-table">
+            <div class="row">
+              <small class="col-sm-6">
+                HIGHLOW protects the privacy of your personal information. View our <a href="">Privacy Policy</a>.
+              </small>
+              <div class="col-sm-6 modal-action">
+                <button class="wizard-next-step btn btn-default btn-lg btn-extruded pull-right">
+                  CREATE FREE DEMO ACCOUNT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+            <nav class="navbar navbar-default sticky-strip visible-logged-in" id="account-menu-bar-wrapper">
+	<div class="content">
+		<div id="account-menu-bar">
+			<div class="container clearfix">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#account-bar">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+			    <div id="account-balance">
+					<h4>
+						Account Balance
+					</h4>
+					<span id="balance">$20,548.00</span>
+					<span class="icon plus"></span>
+				</div>
+			    <div class="collapse navbar-collapse" id="account-bar">
+					<ul class="clearfix nav navbar-nav">
+						<li class="first-child">
+							<a href="">
+								Help Centre
+							</a>
+						</li>
+						<li>
+							<a href="">
+								View Trade Actions
+							</a>
+						</li>
+						<li class="dropdown last-child active">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">
+								My Account <span class="icon drop-down"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+					            <li><a href="my-account.html">Dashboard</a></li>
+					            <li><a href="my-account.html">My Details</a></li>
+					          </ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+        </header>
+        
+<div class="modal fade modal-large" id="withdraw-popup" tabindex="-1" role="dialog" > 
+	<div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="withdraw-popup-label">MAKE A WITHDRAWAL  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+	      </div>
+	      <div class="modal-body">
+	       	<p>Lorem ipsum dolor sit amet. Consectetur adipisicing elit.</p>
+       		<div class="form-wrapper">
+       			<form>
+       				<div class="row">
+			       		<div id="widthdraw-popup-balance" class="input-wrap label-on-top">
+			       			<label>
+			       				Account Balance
+			       			</label>
+			       			<div id="withdraw-balance">
+			       				$20,548.00
+			       			</div>
+		       			</div>
+		       			<div class="input-wrap label-on-top">
+		       				<label>Enter withdrawal amount</label>
+		       				<input type="text" class="form-control" />
+		       			</div>
+		       			<div class="input-wrap label-on-top">
+		       				<label>Choose an account</label>
+		       				<select class="form-control">
+		  						<option>Default</option>
+		  						<option>Acc 1</option>
+		  						<option>Acc 2</option>
+		  						<option>Acc 3</option>
+		  					</select>
+		       			</div>
+	       			</div>
+       			</form>
+       		</div>
+	      </div>
+	      <div class="modal-footer clearfix">
+			<div class="row">
+   				<small class="col-sm-8">
+   					Neteller withdrawal requests will be processed in real-time. Bank transfer withdrawal requests made by 2pm on weekdays will be processed on the same day. Please allow between 1-3 working days for receipt of funds into your nominated bank account.
+   				</small>
+   				<div class="col-sm-4 modal-action">
+   					<button class="wizard-next-step btn btn-default btn-lg btn-extruded pull-right">
+	  					MAKE A WITHDRAWAL
+	  				</button>
+   				</div>
+  			</div>
+	      </div>
+	    </div>
+	</div>
+</div>
+<div id="my-account">
+	<div class="tab-full-width">
+		<div class="tab-selector-wrap">
+			<div class="container">
+				<div class="tab-selector">
+					<ul class="nav nav-tabs" role="tablist">
+					  <li class="active"><a href="#dashboard" role="tab" data-toggle="tab"><img class="inactive-icon" src="public/images/dashboard.png"><img class="active-icon" src="public/images/dashboard-active.png">Dashboard</a></li>
+					  <li><a href="#my-details" role="tab" data-toggle="tab"><img class="inactive-icon" src="public/images/my-details.png"><img class="active-icon" src="public/images/my-details-active.png">My Details</a></li>
+					  <li><a href="#finance" role="tab" data-toggle="tab"><img class="inactive-icon" src="public/images/finance.png"><img class="active-icon" src="public/images/finance-active.png">Finance</a></li>
+					  <li class="last-child"><a href="#trading" role="tab" data-toggle="tab"><img class="inactive-icon" src="public/images/trading.png"><img class="active-icon" src="public/images/trading-active.png">Trading</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Tab panes -->
+		<div class="tab-content-wrap">
+			<div class="tab-content container">
+			  <div class="tab-pane  in active" id="dashboard">
+			  	<h1 class="section-title clearfix">
+			  		DASHBOARD
+			  		<div class="pull-right hidden-xs clearfix">
+				  		<a href="#" class="btn btn-lg btn-default btn-extruded">MAKE A DEPOSIT</a>
+				  		<a href="#" class="btn btn-lg btn-default btn-extruded" data-toggle="modal" data-target="#withdraw-popup">MAKE A WITHDRAWAL</a>
+			  		</div>
+			  	</h1>
+			  	<p class="hidden-xs">
+			  		Welcome back, Jonnyboy.
+			  	</p>
+			  	<div class="row">
+			  		<div class="col-sm-4">
+			  			<div class="panel ">
+							<div class="panel-heading">
+								<h3 class="panel-title">YOUR ACCOUNT BALANCE</h3>
+							</div>
+							<div class="panel-body">
+								<span id="your-account-balance">
+									$20,548.00
+								</span>
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-alternate btn-sm btn-extruded">
+									MAKE A DEPOSIT
+								</button>
+								<button data-toggle="modal" data-target="#withdraw-popup" class="btn btn-alternate btn-sm btn-extruded">
+									MAKE A WITHDRAWAL
+								</button>
+							</div>
+						</div>
+						<div class="panel ">
+							<div class="panel-heading">
+								<h3 class="panel-title">LATEST NEWS &amp; PROMOTIONS</h3>
+							</div>
+							<div class="panel-body">
+								<ul class="article-list">
+									<li>
+										<a href="">News article title goes here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</a> <span class="time">30 min</span>
+									</li>
+									<li>
+										<a href="">Binary Trading onsectetur adipisicing elit, sed do eiusmod tempor.
+ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</a> <span class="time">3 hr</span>
+									</li>
+									<li>
+										<a href="">Market Information title goes here Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</a> <span class="time">18 hr</span>
+									</li>
+									<li>
+										<a href="">Stock Price trend changing Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</a> <span class="time">03/10/13</span>
+									</li>
+								</ul>
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-alternate btn-sm btn-extruded">
+									VIEW ALL NEWS
+								</button>
+								<div class="pull-right">
+									<button class="btn icon left"></button>
+									<button class="btn icon right"></button>
+								</div>
+							</div>
+						</div>
+			  		</div>
+			  		<div class="col-sm-8">
+			  			<div class="panel ">
+							<div class="panel-heading">
+								<h3 class="panel-title">YOUR RECENT TRADES</h3>
+							</div>
+							<div class="panel-body">
+								<table class="table table-striped responsive">
+									<thead>
+										<tr>
+											<th>
+												Date
+											</th>
+											<th>
+												Type
+											</th>
+											<th>
+												Asset
+											</th>
+											<th>
+												Strike
+											</th>
+											<th>
+												Status
+											</th>
+											<th>
+												Investment
+											</th>
+											<th>
+												Payout
+											</th>
+											<th>
+												ID
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-up"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-down"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-up"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-down"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-up"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-down"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-up"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-down"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-up"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+										<tr>
+											<td data-th="Date">
+												03/10/13
+											</td>
+											<td data-th="Type">
+												X
+											</td>
+											<td data-th="Asset">
+												NZD/JPY
+											</td>
+											<td data-th="Strike">
+												<span class="icon price-down"></span> 102.77
+											</td>
+											<td data-th="Status">
+												Closed
+											</td>
+											<td data-th="Investment">
+												$500.00
+											</td>
+											<td data-th="Payout">
+												$18,000.00
+											</td>
+											<td data-th="ID">
+												12345678
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="panel-footer">
+								<button class="btn btn-alternate btn-sm btn-extruded pull-right">
+									VIEW ALL TRADES
+								</button>
+							</div>
+						</div>
+			  		</div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane " id="my-details">
+			  	<h1 class="section-title clearfix">
+			  		MY DETAILS
+			  		<div class="pull-right hidden-xs clearfix">
+				  		<a href="#" class="btn btn-lg btn-default btn-extruded">MAKE A DEPOSIT</a>
+				  		<a href="#" class="btn btn-lg btn-default btn-extruded" data-toggle="modal" data-target="#withdraw-popup">MAKE A WITHDRAWAL</a>
+			  		</div>
+			  	</h1>
+			  	<p>
+			  		This serves as an introduction slot nim pariatur cliche reprehenderit, enim eiusmod…
+			  	</p>
+			  	<div class="tab-side-bar">
+			  		<div class="tab-side-bar-pseudo-row">
+				  		<div class="tab-selector-wrap">
+				  			<div class="tab-selector">
+								<ul class="nav nav-tabs container" role="tablist">
+								  <li class="active"><a href="#contact-information" role="tab" data-toggle="tab">Contact Information</a></li>
+								  <li><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+								  <li class="last-child"><a href="#neteller" role="tab" data-toggle="tab">Neteller</a></li>
+								</ul>
+							</div>
+				  		</div>
+				  		<div class="tab-content-wrap">
+							<div class="tab-content">
+							  	<div class="tab-pane active" id="contact-information">
+								  	<div class="form-wrapper">
+								  		<h3>
+								  			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+								  		</h3>
+								  		<form role="form">
+								  			<div class="form-group row">
+								  				<div class="col-md-6 clearfix">
+									  				<label><span>First Name</span></label>
+								  					<div class="input-wrap">
+									  					<input type="text" class="form-control" value=""/>
+								  					</div>
+								  				</div>
+								  				<div class="col-md-6 clearfix">
+									  				<label><span>Last Name</span></label>
+								  					<div class="input-wrap error">
+								  						<input type="text" class="form-control error" value=""/>
+								  						<span class="error-message">Please complete required field!</span>
+								  					</div>
+								  				</div>
+								  			</div>
+								  			<div class="form-group row">
+								  				<div class="col-md-6 clearfix">
+									  				<label>Address</label>
+								  					<div class="input-wrap">
+									  					<input type="text" class="form-control" value=""/>
+									  				</div>
+								  				</div>
+								  				<div class="col-md-6 clearfix">
+									  				<label>City</label>
+									  				<div class="input-wrap">
+									  					<input type="text" class="form-control" value=""/>
+									  				</div>
+								  				</div>
+								  			</div>
+										  	<div class="form-group row">
+								  				<div class="col-md-6 clearfix">
+									  				<label><span>State / Province</span></label>
+								  					<div class="input-wrap">
+									  					<select class="form-control">
+									  						<option>SA</option>
+									  						<option>VIC</option>
+									  						<option>QLD</option>
+									  						<option>NT</option>
+									  						<option>WA</option>
+									  						<option>ACT</option>
+									  						<option>TAS</option>
+									  						<option selected>NSW</option>
+									  					</select>
+								  					</div>
+								  				</div>
+								  				<div class="col-md-6 clearfix">
+									  				<label><span>Post Code</span></label>
+								  					<div class="input-wrap">
+									  					<input type="text" class="form-control" value=""/>
+									  				</div>
+								  				</div>
+								  			</div>
+								  			<div class="form-group row">
+								  				<div class="col-md-6 clearfix">
+								  					<label><span>Phone Number</span></label>
+								  					<div class="input-wrap">
+									  					<input type="text" class="form-control" value=""/>
+								  					</div>
+								  				</div>
+								  				<div class="col-md-6 clearfix">
+									  				<label><span>Email Address</span></label>
+								  					<div class="input-wrap error">
+								  						<input type="email" class="form-control error" value=""/>
+								  						<span class="error-message">Please enter a valid email address!</span>
+									  				</div>
+								  				</div>
+								  			</div>
+								  			<div class="form-group row">
+								  				<div class="col-md-6 clearfix">
+								  					<label><span>Check Field</span></label>
+									  				<div class="input-wrap">
+									  					<div class=" check-field-wrap">
+									  						<label for="check1">
+									  							<input id="check1" type="checkbox"> Lorem Ipsum
+									  						</label>
+									  						<label for="check2">
+									  							<input id="check2" type="checkbox"> Lorem Ipsum
+									  						</label>
+									  						<label for="check3">
+									  							<input id="check3" type="checkbox"> Lorem Ipsum
+									  						</label>
+									  						<label for="check4">
+									  							<input id="check4" type="checkbox"> Lorem Ipsum
+									  						</label>
+									  					</div>
+									  				</div>
+								  				</div>
+								  				<div class="col-md-6 clearfix">
+									  				<label><span>Radio Field</span></label>
+								  					<div class="input-wrap">
+								  						<div class=" radio-field-wrap">
+									  						<label for="r1">
+									  							<input id="r1" type="radio"> Lorem Ipsum
+									  						</label>
+									  						<label for="r2">
+									  							<input id="r2" type="radio"> Lorem Ipsum
+									  						</label>
+									  						<label for="r3">
+									  							<input id="r3" type="radio"> Lorem Ipsum
+									  						</label>
+									  						<label for="r4">
+									  							<input id="r4" type="radio"> Lorem Ipsum
+									  						</label>
+									  					</div>
+									  				</div>
+								  				</div>
+								  			</div>
+								  			<div class="form-group row">
+								  				<div class="col-md-12 clearfix full-width">
+									  				<label><span>Long Text</span></label>
+								  					<div class="input-wrap">
+									  					<textarea class="form-control"></textarea>
+								  					</div>
+								  				</div>
+								  			</div>
+								  			<div class="form-footer clearfix">
+								  				<div class="input-wrap">
+									  				<label for="checkB">
+									  					<input type="checkbox" type="checkbox" checked/> Lorem ipsm dolor sit amet, lorem ipsum dolor?
+									  				</label>
+								  				</div>
+								  				<button class="btn btn-default btn-lg btn-extruded">
+								  					SAVE CHANGES
+								  				</button>
+								  			</div>
+										</form>
+								  	</div>
+								</div>
+							  	<div class="tab-pane" id="profile">...</div>
+							  	<div class="tab-pane" id="neteller">...</div>
+							</div>
+						</div>
+					</div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane  " id="finance">...</div>
+			  <div class="tab-pane  " id="trading">...</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="faq">
+	<div class="container">
+		<h1 class="section-title">COMMON TRADING QUESTIONS</h1>
+		<p class="section-sub-title">
+			These are some of our most commonly asked questions. For a full FAQ <a href="faq.html">click here</a>.
+		</p>
+		<div class="clearfix">
+			<div class="col-md-6 qna">
+				<h5><label>Q.</label> How do I fund my account?</h5>
+				<p><label>A.</label>Log in to 'My Account' and click on 'Deposit' to fund your account.
+				Deposits received by 2pm on weekdays will be processed by the close of that day.
+				You will be notified by email once your account has been successfully funded. 
+				Please note that the minimum deposit amount is AUD $10.</p>
+			</div>
+			<div class="col-md-6 qna">
+				<h5><label>Q.</label>How do I withdraw from my account?</h5>
+				<p><label>A.</label>Log in to 'My Account' and click on 'Withdrawal' and submit the amount you would like to withdraw. All withdrawal requests made by 2pm business days will be processed on the same day. Please allow between 1-3 working days for receipt of funds into your nominated bank account. The minimum amount of withdrawal is AUD $10.</p>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="col-md-6 qna">
+				<h5><label>Q.</label>Is there an upper limit for the total investment amount of multiple transactions?</h5>
+				<p><label>A.</label>For options that have not yet been settled prior to expiry time. The maximum investment amount for options which may be held (by our customers) is $100,000 AUD or USD.</p>
+			</div>
+			<div class="col-md-6 qna">
+				<h5><label>Q.</label>Can I trade options just before the expiry time?</h5>
+				<p><label>A.</label>No. Please note that you can neither purchase nor close after the deadline/cutoff where trading is ceased but the option has not yet expired. </p>
+			</div>
+		</div>
+		<div class="cta-strip">
+			<div class="cta-strip-pseudo-row">
+				<h3 class="cta-strip-title"><img src="public/images/help-cta-small.png"/>Need more help?</h3>
+				<div class="cta-wrap">
+					<div class="cta clearfix">
+						<a href="faq.html" class="btn-negative btn btn-extruded btn-lg pull-left">VISIT OUR HELP CENTER</a>
+						<a href="contact-us.html" class="btn-negative btn btn-extruded btn-lg pull-left">CONTACT US</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+        <footer>
+	<div class="container-fluid kapitall-block">
+		<div class="clearfix kapitall-strip">
+	<div class="testi faded fade-able">
+	    <ul class="tcycle" data-fx="scroll" data-easing="" data-speed="750" data-timeout="3000">
+	    	<li class="first">
+	    		<h3><em>&ldquo;Binary trading lorem ipsum dolor sit amet!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li>
+	    		<h3><em>&ldquo;Re-inventing Binary Trading!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li>
+	    		<h3><em>&ldquo;Teaem cloer gekog Binary Trading!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li> 
+	    		<h3><em>&ldquo;Tires fedora core Binary Trading ubuntu nodejs!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    </ul>
+	</div>
+	<div class="rotating-strip fade-able">
+		<ul>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+		</ul>
+		<div id="rotating-strip-edge-left" class="icon">
+		</div>
+		<div id="rotating-strip-edge-right" class="icon">
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="container">
+		<div class="clearfix">
+			<div class="affiliation-wrapper">
+				<div class="affiliation">
+					<h3>
+						Lorem ipsum
+					</h3>
+					<div class="clearfix">
+						<div class="icon visa">
+						</div>
+						<div class="icon master">
+						</div>
+						<div class='icon neteller'>
+						</div>
+					</div>
+				</div>
+				<div class="affiliation">
+					<h3>
+						Lorem ipsum
+					</h3>
+					<div class="clearfix">
+						<div class="icon nab">
+						</div>
+						<div class="icon smbc">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-cta-wrapper">
+				<a href="" class="block" id="affiliate-login">
+					Affiliates login <img src="public/images/affiliate-icon.png"/>
+				</a>
+				<div id="footer-mobile-app-cta-mobile" class="">
+					<h3 class="block header">Download HighLow for your mobile</h3>
+					<div class="clearfix">
+						<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus" id="footer-android-icon" class="icon block pull-left">
+							Android
+						</a>
+						<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8" id="footer-apple-icon" class="icon block pull-right">
+							App Store
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="col-xs-12 keyline">
+			</div>
+			<div class="row-sm">
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Binary options</h4>
+					<ul>
+						<li>
+							<a href="highlow.html">
+								HIGHLOW
+							</a>
+						</li>
+						<li>
+							<a href="why-highlow.html">
+								Why HighLow?
+							</a>
+						</li>
+						<li>
+							<a href="contact-us.html">
+								Contact Us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								The HighLow advantage
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Our experience
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Start trading</h4>
+					<ul>
+						<li>
+							<a href="trade-platform.html">
+								Access Trading area
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#demo-signup-popup">
+								Access full demo
+							</a>
+						</li>
+						<li>
+							<a href="signup-form.html">
+								Join now
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#signin-popup">
+								Log in
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Resources</h4>
+					<ul>
+						<li>
+							<a href="about.html">About us</a>
+						</li>
+			            <li>
+			            	<a href="how-to-trade.html">How to trade</a>
+			            </li>
+			            <li>
+			            	<a href="faq.html">FAQ&rsquo;s</a>
+			            </li>
+			            <li>
+			            	<a href="expiry-rate.html">Expiry rates</a>
+			            </li>
+			            <li>
+			            	<a href="blog.html">Blog</a>
+			            </li>
+			            <li>
+			            	<a href="option-schedules.html">Options Schedules</a>
+			            </li>
+			            <li>
+			            	<a href="app-page.html">Apps Download</a>
+			            </li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-sm">
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Downloads</h4>
+					<ul>
+						<li>
+							<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8">
+								iPhone app
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus">
+								Android app
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Financial Services guide
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Download item A
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Download item B
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Legals</h4>
+					<ul>
+						<li>
+							<a href="">
+								Privacy Policy
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Disclaimer
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Terms and conditions
+							</a>
+						</li>
+						<li>
+							<a href="contact-us.html">
+								Contact Highlow
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer-mobile-app-cta" class="pull-right">
+				<h3 class="block header">Download HighLow for your mobile</h3>
+				<div class="clearfix">
+					<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus" id="footer-android-icon" class="icon block pull-left" id="footer-android-icon" class="icon block pull-left">
+						Android
+					</a>
+					<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8" id="footer-apple-icon" class="icon block pull-right">
+						App Store
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<h5>
+				General Advice Disclaimer
+			</h5>
+			<small>
+				This website is published and owned by Realtime Capital Markets Pty Ltd (ACN 143 553 628), holder of Australian Financial Services Licence number 364264. This licence authorises the licensee to carry on a financial services business in Australia, limited to providing the financial services covered by the licence. The products and services described on this site is not available for residents in countries where such distribution is not permitted by the laws of the country. The information contained in this website is of a general nature only, and does not take into account your personal circumstances, financial situation or needs. Dealing in binary options and our other over-the-counter derivative products carries significant risk, and you may lose all of your initial investments and in some cases, other than binary options, you may also incur losses that exceed your initial investments. You should read the Product Disclosure Statement for binary options dated 01/11/2013, the Financial Services Guide and consult your own professional advisors before deciding whether dealing in our financial products is suitable for you.
+			</small>
+		</div>
+	</div>
+</footer>
+        
+
+
+<script src="public/js/jquery-1.11.1.min.js"></script>
+
+<script src="public/js/isotope.pkgd.min.js"></script>
+<script src="public/js/jquery.cookie.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/jquery-ui.min.js"></script>
+<script src="public/js/highlow.min.js"></script>
+    </body>
+</html>

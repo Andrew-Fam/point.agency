@@ -1,0 +1,42 @@
+.secured {
+	position: relative;
+	.container {
+		position: relative;
+		.clearfix();
+	}
+	.digicert-logo {
+		position: absolute;
+		top: -12px;
+		left: 41px;
+		display: block;
+		@media (max-width: 850px) {
+			top: 0px;
+		} 
+	}
+	small {
+		font-size: 12px;
+		font-family: @neue-helvetica;
+		font-weight: 400;
+		color: #595959;
+		max-width: 74em;
+		padding-left: 154px;
+		display: block;
+		margin-bottom: 58px;
+	}
+
+	@media (max-width: @iphone-4-h-break-point) {
+		.digicert-logo {
+			position: relative;
+			top: 0;
+			left: 0;
+			margin: auto;
+			margin-bottom: 27px;
+			display: block;
+		}
+		small {
+			text-align: center;
+			max-width: 100%;
+			padding: 0px;
+		}
+	}
+}

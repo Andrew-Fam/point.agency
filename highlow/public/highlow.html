@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HighLow HTML template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/521a1bbb-4492-4625-bae8-58bf3edd68bf.css"/>
+        <link href="public/css/highlow.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <!--[if lt IE 9]>
+            <link href="public/css/ie8.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <![endif]-->
+
+         <!--[if lt IE 9]>
+        
+        <script src="public/js/html5shiv.min.js"></script>
+        <script src="public/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>        
+            <div id="user-bar" class="sticky-strip">
+  <div class="content">
+    <div class="container clearfix visible-logged-in">
+      <div class="pull-left site-settings">
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="jp"><b>日本語</b></span> <span class="icon drop-down"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#"><span class="jp"><b>日本語</b></span></a></li>
+          </ul>
+        </a>
+        <span class="hidden-xs hidden-sm">
+          <span id="date">15 June, 2014</span> <span id="time">17:28:01</span> <span id="timezone">[Syd]</span>
+        </span>
+      </div>
+      <div class="pull-right login">
+        <span class="icon user-small-borderless"></span> Welcome <span id="username">Jon</span> <a href="#" id="logout-trigger-button" class="btn btn-alternate btn-sm">LOG OUT</a>
+      </div>
+    </div>
+    <div class="container clearfix hidden-logged-in">
+      <div class="pull-left site-settings">
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <span class="icon drop-down"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">日本語</a></li>
+          </ul>
+        </a>
+        <span class="hidden-xs hidden-sm">
+          <span id="date">15 June, 2014</span> <span id="time" class="highlight">17:28:01</span> <span id="timezone" class="highlight">[Syd]</span>
+        </span>
+      </div>
+      <div class="pull-right login"><span class="icon move-in hidden-xs"></span> <a id="go-to-full-demo" href="#" data-toggle="modal" data-target="#demo-signup-popup" class="highlight hidden-xs">Full demo</a>
+        <span class="icon user-small-borderless"></span> <span class="hidden-xs">Existing user?</span> <a id="username" class="highlight" href="#" data-toggle="modal" data-target="#signin-popup">Log in</a> <a href="signup-form.html" class="btn btn-alternate btn-sm"><span class="hidden-xs">JOIN NOW - IT'S FREE</span><span class="hidden-sm hidden-md hidden-lg visible-xs">JOIN NOW FREE!</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" role="navigation" id="common-nav">
+  <div class="content">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href='highlow.html' class="high-low pull-left icon"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="trade-platform.html">TRADE</a></li>
+          <li><a href="highlow.html">HIGHLOW</a></li>
+          <li><a href="why-highlow.html">WHY HIGHLOW?</a></li>
+          <li class="dropdown last-child">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="icon drop-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="how-to-trade.html">HOW TO TRADE</a></li>
+              <li><a href="faq.html">FAQ&rsquo;s</a></li>
+              <li><a href="expiry-rate.html">EXPIRY RATES</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="option-schedules.html">OPTIONS SCHEDULE</a></li>
+              <li><a href="app-page.html">APPS DOWNLOAD</a></li>
+              <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </div>
+</nav>
+<div class="modal fade" id="signin-popup" tabindex="-1" role="dialog" > 
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="signin-popup-label"> <span class="icon user-border-less"></span> SIGN IN TO HIGHLOW  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-wrapper padding-less">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="input-wrap label-on-top">
+                    <label>Username</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-wrap label-on-top">
+                    <label>Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="modal-footer-pseudo-table">
+            <div class="row">
+              <small class="col-sm-6">
+                <a href="index.html">Forgot your password?</a>
+              </small>
+              <div class="col-sm-6 modal-action">
+                <button id="login-trigger-button" class="btn btn-default btn-lg btn-extruded pull-right">
+                  SIGN IN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-large" id="demo-signup-popup" tabindex="-1" role="dialog" > 
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="demo-signup-popup-label">SIGN UP FOR THE FULL <strong>100% FREE</strong> DEMO  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+        </div>
+        <div class="modal-body">
+          <p>Complete the form below for your free 30 day trial.</p>
+          <div class="form-wrapper padding-less">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label><span>First Name*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Last Name*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Country*</label>
+                    <div class="input-wrap">
+                      <select class="form-control">
+                        <option>Select your country</option>
+                        <option>Australia</option>
+                        <option>Japan</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Contact Number*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Email*</label>
+                    <div class="input-wrap">
+                      <input type="email" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Referal source*</span></label>
+                    <div class="input-wrap">
+                      <select class="form-control">
+                        <option>Select source</option>
+                        <option>Friends</option>
+                        <option>Trading blog</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 hidden-xs">
+                  <div class="content-wrapper">
+                    <div class="small-sub-title">LEARN AS YOU TRADE!</div>
+                    <ul>
+                      <li>
+                        Trade forex, indices, commodities &amp; Stocks
+                      </li>
+                      <li>
+                        Use $20,000 virtual funds
+                      </li>
+                      <li>
+                        Try HighLow, Spread HighLow and On Demand Binary Options
+                      </li>
+                      <li>
+                        Trade without spreads or charges
+                      </li>
+                      <li>
+                        No need to download – the program is web-based
+                      </li>
+                      <li>
+                        Know immediately how much you would gain/risk
+                      </li>
+                      <li>
+                        Trades from as little as USD10
+                      </li>
+                    </ul> 
+                  </div>
+                </div>  
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="modal-footer-pseudo-table">
+            <div class="row">
+              <small class="col-sm-6">
+                HIGHLOW protects the privacy of your personal information. View our <a href="">Privacy Policy</a>.
+              </small>
+              <div class="col-sm-6 modal-action">
+                <button class="wizard-next-step btn btn-default btn-lg btn-extruded pull-right">
+                  CREATE FREE DEMO ACCOUNT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+        </header>
+        
+
+<div class="hero">
+	<div class="hero-content tour" data-disable-full-height="true">
+		<img class="bg" src="public/images/home-bg.jpg" />
+		<div class="headline tour">
+			<div class="headline-pseudo-row">
+				<div class="headline-content">
+					<div class="headline-content-inner-wrap clearfix">
+						<h1>BINARY OPTIONS</h1>
+						<strong>
+							STREAMLINE YOUR TRADING
+						</strong>
+						<p>
+							<a href="#" class="btn btn-default btn-lg btn-extruded" data-toggle="modal" data-target="#demo-signup-popup">
+								TRY OUR FREE DEMO
+							</a>
+							<a href="signup-form.html" class="btn btn-default btn-lg btn-extruded">
+								JOIN NOW
+							</a>
+						</p> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="intro">
+	<div class="section-sub-title">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					Welcome to HIGHLOW and the action of binary options trading. HIGHLOW is a market leader in the fastest growing online trading product around. With our secure, reliable and easy to use platform, we want to provide the most rewarding experience in binary trading for beginners and seasoned FOREX traders alike. Let's go!
+					<br><img id="tour-down" src="public/images/intro-down.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="std-cont" id="explanation">
+		<div class="main-cont explanation">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 item">
+						<img src="public/images/highlow-icon.png" />
+						<div class="content">
+							<h1 class="section-title">WHY TRADE BINARIES?</h1>
+							<p>
+								If you're looking for exciting short-term and fast-paced trading opportunities with limited risk, binary trading is for you. With a level of certainty and simplicity, binary trading can reward you with significant short-term gains for a minimal investment. 
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-6 item">
+						<img src="public/images/user-big.png" />
+						<div class="content">
+							<h1 class="section-title">WHO TRADES THEM?</h1>
+							<p>
+								Binary options trading is popular with novice investors and experienced FOREX day traders alike. It can be an exciting, convenient and efficient way to make fast, short-term financial gains while mitigating the risk.   And you don't need to be a high-rolling investor - you can get in on the action with as little as AUD $10.
+							</p>
+						</div>
+					</div>
+				</div>
+				<a href="what-is-binary-trading.html" class="centered btn btn-clear btn-extruded btn-lg">
+					LEARN MORE ABOUT BINARY OPTIONS
+				</a>
+			</div>
+		</div>
+		<div class="container details">
+			<div class="main-cont">
+				<h1 class="section-title">
+					BINARY OPTIONS WITH HIGH LOW
+				</h1>
+			</div>
+			<div class="tab-side-bar light">
+		  		<div class="tab-side-bar-pseudo-row">
+			  		<div class="tab-selector-wrap">
+			  			<div class="tab-selector">
+							<ul class="nav nav-tabs" role="tablist">
+							  <li class="active"><a href="#amazing-returns" role="tab" data-toggle="tab"><span class="icon amazing-returns"></span>Amazing Returns</a></li>
+							  <li><a href="#multiple-option-types" role="tab" data-toggle="tab"><span class="icon multi-option"></span>Multiple Option Types	</a></li>
+							  <li class="last-child"><a href="#fully-accredited" role="tab" data-toggle="tab"><span class="icon fully-accredited"></span>Fully Accredited</a></li>
+							</ul>
+						</div>
+			  		</div>
+			  		<div class="tab-content-wrap">
+						<div class="tab-content">
+						  	<div class="tab-pane active" id="amazing-returns">
+						  		<div class="content">
+						  		<p class="section-sub-title">
+						  			Is it because trading is easy? Is it the potential for huge returns? Or is it the certainty offered with every trade? ? It's all this and more that have seen binary options explode in popularity around the world.
+						  		</p>
+						  		<p>
+						  			With binary options trading, investors appreciate that there will always be one of only three possible outcomes: the option expires in-the-money (win), out-of-the-money (lose), or at-the-money (even). 
+						  		</p>
+						  		<p>
+						  			With HIGHLOW you have the chance to achieve returns of up to 200% on your initial investment, quickly and securely. </p>
+						  		<p>
+									Unlike many other market-linked, over-the-counter financial products, binary options offer greater ease and convenience. With shorter investment time frames, there is no need to constantly monitor your position, or be concerned with limit orders, stop orders or the dreaded margin call. 
+								</p>
+								<p>
+									And while many investments have prohibitive 'costs of entry', you can be part of the exciting world of binary options trading through HIGHLOW with as little as AUD $10. 
+								</p>
+								</div>
+								<img class="illustration" src="public/images/article-img.jpg" />
+						  	</div>
+						  	<div class="tab-pane" id="multiple-option-types">
+						  		<div class="content">
+							  		<p class="section-sub-title">
+							  			The HIGHLOW trading platform offers you four types of binary options: 
+							  		</p>
+
+					  				<h2>Spread HIGHLOW</h2>
+					  				<p>
+					  					This type of Binary Option shows a bid/ask spread, the standard method of price making in the FOREX markets. <br> <b>Potential returns:</b> 200%. That's double your investment! <br> <b>The choice for you</b> if you expect large market movements and are seeking higher payouts.
+					  				</p>
+
+					  				<h2>HIGHLOW</h2>
+					  				<p>
+					  					This is a conventional Binary Option that shows the mid or at-the-money price, 
+										<br><b>Potential returns:</b>  between 180% to 190% of your investment.
+										<br><b>The choice for you</b> if you like to trade on small movements or range-bound markets.
+					  				</p>
+
+									<h2>Spread on Demand</h2>
+									<p>
+										Like your trading fast and furious? Spread on demand lets you choose a fixed time frame that best suits you, from 1 minute to 5 minutes.
+										<br><b>Potential returns:</b>  200%
+										<br><b>The choice for you</b> if you like versatility and prefer to observe short term patterns.
+									</p>
+
+
+					  				<h2>
+					  					Options on Demand
+					  				</h2>
+					  				<p>
+					  					Options on Demand give you the versatility to choose fixed timeframes and set payouts that suit your preferences.
+										<br><b>Potential returns:</b> between 175% to 190% of your investment.
+										<br><b>The choice for you</b> if you like flexibility and versatility in short term patterns.
+					  				</p>
+						  		</div>
+						  	</div>
+						  	<div class="tab-pane" id="fully-accredited">
+						  		<div class="content">
+						  			<p class="section-sub-title">
+						  				HIGHLOW holds Australian Financial Services licence number 364264, issued by the Australian Securities &amp; Investments Commission.
+						  			</p>
+						  			<p>
+										Licensees are required to meet strict capital requirements and to implement and comply with internal procedures including risk management, staff training, accounting and audits.
+									</p>
+						  			<p>
+										ASIC is responsible for regulating licensees' compliance with their obligations under their Australian Financial Services Licence.
+						  			</p>
+						  		</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="about.html" class="centered btn btn-clear btn-extruded btn-lg">
+				LEARN MORE ABOUT HIGHLOW
+			</a>
+	  	</div>
+	</div>
+</div>
+
+<div class="parallax">
+	<img class="bg" src="public/images/home-bg.jpg"/>
+	<div class="content container">
+		<h1 class="section-title">
+			OUR PLATFORM
+		</h1>
+		<img src="public/images/mockup-devices.png" id="mockup-devices"/>
+	</div>
+</div>
+
+<div class="zoomed-in-features" id="tour-features">
+	<div class="container">
+		<p class="section-sub-title text-centered">
+			HIGHLOW's secure, reliable and easy trading platform is available online or by downloading our fully-featured apps for iPhone or Android devices so you can trade on HIGHLOW when you're on the go for anytime, anywhere action.
+		</p>
+		<br>
+		<br>
+		<div class="std-cont">
+			<div class="main-cont">
+				<div class="row two-col">
+					<div class="col-sm-6">
+						<h1 class="section-title">
+							DEMO ACCOUNT
+						</h1>
+						<p class="section-sub-title">
+							Open a Demo account and learn to trade risk free
+						</p>
+						<p>	
+							Before you invest your money, why not invest 'ours'? Sign up to open a free demo account and you can get to know all the ins and outs of HIGHLOW with $10,000 in risk-free virtual funds to trade in real time and real markets. Unlike some of our competitors, we want you to be fully familiar and comfortable with HIGHLOW's binary option trading features and functions before you get in on the action.
+						</p>
+						<p>
+							<a href="#demo-signup-popup" data-toggle="modal" class="btn btn-default btn-extruded btn-lg" data-target="#demo-signup-popup">Open your demo account now!</a>
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<img src="public/images/feature1.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="std-cont">
+			<div class="main-cont">
+				<div class="row two-col">
+					<div class="col-sm-6 pull-right">
+						<h1 class="section-title">
+							CASHBACK ON FIRST TRADE
+						</h1>
+						<p class="section-sub-title">
+							Open a new account today and you can be rewarded with up to AUD$50 cashback on your first trade.
+						</p>
+						<p>
+							Once your account is set up, all you have to do is complete one trade and you'll automatically be credited with the value of that trade up to a maximum of AUD $50.
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<img src="public/images/feature2.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="std-cont">
+			<div class="main-cont">
+				<div class="row two-col">
+					<div class="col-sm-6">
+						<h1 class="section-title">
+							STRAIGHT FORWARD ACCOUNT MANAGEMENT
+						</h1>
+						<p class="section-sub-title">
+							Use My Account to access your account, review your trading history, deposit funds and more. 
+						</p>
+						<p>
+							When you login to HIGHLOW, simply navigate to MyAccount where you will find the tools to make your account management easy. You can now upload funds via credit cards, SKRLL and NETELLER. 
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<img src="public/images/feature3.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+</div>
+<div class="feature-row">
+	<img src="public/images/white-down-triangle.png" id="down-triangle"/>
+	<div class="container ">
+		<div class="std-cont">
+			<div class="row main-cont">
+				<div class="col-sm-6 col-md-3">
+					<div class="feature">
+						<img src="public/images/lock.png" />
+						<h2 class="section-title">
+							FULLY SECURE
+						</h2>
+						<p>
+							Your security is as important to us as it is to you. The HIGHLOW site and apps are secured by 2048-Bit SSL Encryption. Trade with confidence knowing our platform employs the strongest encryption currently available.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 feature">
+					<div class="feature">
+						<img src="public/images/globe.png" />
+						<h2 class="section-title">
+							EASY CASHOUT
+						</h2>
+						<p>
+							HIGHLOW proudly provides the industry's quickest withdrawals. You can cashout in real time via Neteller, or on the next business day if you prefer bank transfer.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 feature">
+					<div class="feature">
+						<img src="public/images/eye.png" />
+						<h2 class="section-title">
+							NO HIDDEN FEES
+						</h2>
+						<p>
+							Rest assured that with HIGHLOW that you're never going to be stung by hidden fees. 
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 feature">
+					<div class="feature">
+						<img src="public/images/house.png" />
+						<h2 class="section-title">
+							LICENSED BY AFS
+						</h2>
+						<p>
+							RTCM, the owner and provider of the HIGHLOW trading platform,  holds an Australian Financial Services licence (number 364264), issued by the Australian Securities &amp; Investments Commission.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="cta-strip">
+				<div class="cta-strip-pseudo-row">
+					<h3 class="cta-strip-title"><img src="public/images/bolt.png"/>Learn as you trade with our risk-free demo&hellip;</h3>
+					<div class="cta-wrap">
+						<div class="cta clearfix">
+							<a href="#" class="btn-alternate btn btn-extruded btn-lg pull-left" data-toggle="modal" data-target="#demo-signup-popup">BEGIN DEMO</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+        <footer>
+	<div class="container-fluid kapitall-block">
+		<div class="clearfix kapitall-strip">
+	<div class="testi faded fade-able">
+	    <ul class="tcycle" data-fx="scroll" data-easing="" data-speed="750" data-timeout="3000">
+	    	<li class="first">
+	    		<h3><em>&ldquo;Binary trading lorem ipsum dolor sit amet!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li>
+	    		<h3><em>&ldquo;Re-inventing Binary Trading!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li>
+	    		<h3><em>&ldquo;Teaem cloer gekog Binary Trading!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li> 
+	    		<h3><em>&ldquo;Tires fedora core Binary Trading ubuntu nodejs!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    </ul>
+	</div>
+	<div class="rotating-strip fade-able">
+		<ul>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+		</ul>
+		<div id="rotating-strip-edge-left" class="icon">
+		</div>
+		<div id="rotating-strip-edge-right" class="icon">
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="container">
+		<div class="clearfix">
+			<div class="affiliation-wrapper">
+				<div class="affiliation">
+					<h3>
+						Lorem ipsum
+					</h3>
+					<div class="clearfix">
+						<div class="icon visa">
+						</div>
+						<div class="icon master">
+						</div>
+						<div class='icon neteller'>
+						</div>
+					</div>
+				</div>
+				<div class="affiliation">
+					<h3>
+						Lorem ipsum
+					</h3>
+					<div class="clearfix">
+						<div class="icon nab">
+						</div>
+						<div class="icon smbc">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-cta-wrapper">
+				<a href="" class="block" id="affiliate-login">
+					Affiliates login <img src="public/images/affiliate-icon.png"/>
+				</a>
+				<div id="footer-mobile-app-cta-mobile" class="">
+					<h3 class="block header">Download HighLow for your mobile</h3>
+					<div class="clearfix">
+						<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus" id="footer-android-icon" class="icon block pull-left">
+							Android
+						</a>
+						<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8" id="footer-apple-icon" class="icon block pull-right">
+							App Store
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="col-xs-12 keyline">
+			</div>
+			<div class="row-sm">
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Binary options</h4>
+					<ul>
+						<li>
+							<a href="highlow.html">
+								HIGHLOW
+							</a>
+						</li>
+						<li>
+							<a href="why-highlow.html">
+								Why HighLow?
+							</a>
+						</li>
+						<li>
+							<a href="contact-us.html">
+								Contact Us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								The HighLow advantage
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Our experience
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Start trading</h4>
+					<ul>
+						<li>
+							<a href="trade-platform.html">
+								Access Trading area
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#demo-signup-popup">
+								Access full demo
+							</a>
+						</li>
+						<li>
+							<a href="signup-form.html">
+								Join now
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#signin-popup">
+								Log in
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Resources</h4>
+					<ul>
+						<li>
+							<a href="about.html">About us</a>
+						</li>
+			            <li>
+			            	<a href="how-to-trade.html">How to trade</a>
+			            </li>
+			            <li>
+			            	<a href="faq.html">FAQ&rsquo;s</a>
+			            </li>
+			            <li>
+			            	<a href="expiry-rate.html">Expiry rates</a>
+			            </li>
+			            <li>
+			            	<a href="blog.html">Blog</a>
+			            </li>
+			            <li>
+			            	<a href="option-schedules.html">Options Schedules</a>
+			            </li>
+			            <li>
+			            	<a href="app-page.html">Apps Download</a>
+			            </li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-sm">
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Downloads</h4>
+					<ul>
+						<li>
+							<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8">
+								iPhone app
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus">
+								Android app
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Financial Services guide
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Download item A
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Download item B
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Legals</h4>
+					<ul>
+						<li>
+							<a href="">
+								Privacy Policy
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Disclaimer
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Terms and conditions
+							</a>
+						</li>
+						<li>
+							<a href="contact-us.html">
+								Contact Highlow
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer-mobile-app-cta" class="pull-right">
+				<h3 class="block header">Download HighLow for your mobile</h3>
+				<div class="clearfix">
+					<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus" id="footer-android-icon" class="icon block pull-left" id="footer-android-icon" class="icon block pull-left">
+						Android
+					</a>
+					<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8" id="footer-apple-icon" class="icon block pull-right">
+						App Store
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<h5>
+				General Advice Disclaimer
+			</h5>
+			<small>
+				This website is published and owned by Realtime Capital Markets Pty Ltd (ACN 143 553 628), holder of Australian Financial Services Licence number 364264. This licence authorises the licensee to carry on a financial services business in Australia, limited to providing the financial services covered by the licence. The products and services described on this site is not available for residents in countries where such distribution is not permitted by the laws of the country. The information contained in this website is of a general nature only, and does not take into account your personal circumstances, financial situation or needs. Dealing in binary options and our other over-the-counter derivative products carries significant risk, and you may lose all of your initial investments and in some cases, other than binary options, you may also incur losses that exceed your initial investments. You should read the Product Disclosure Statement for binary options dated 01/11/2013, the Financial Services Guide and consult your own professional advisors before deciding whether dealing in our financial products is suitable for you.
+			</small>
+		</div>
+	</div>
+</footer>
+        
+
+
+<script src="public/js/jquery-1.11.1.min.js"></script>
+
+<script src="public/js/isotope.pkgd.min.js"></script>
+<script src="public/js/jquery.cookie.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/jquery-ui.min.js"></script>
+<script src="public/js/highlow.min.js"></script>
+    </body>
+</html>

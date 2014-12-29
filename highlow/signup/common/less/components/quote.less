@@ -1,0 +1,81 @@
+.quotes {
+	background-color: #1a1a1a;
+	padding: 42px 70px 30px;
+	margin-bottom: 80px;
+	position: relative;
+	@media (max-width: @phone-break-point) {
+		padding: 40px 30px 16px;
+		margin-bottom: 54px;
+	}
+	.quote-symbol {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -@quote-symbol-width/2;
+		margin-top: -@quote-symbol-height/2;
+		.sprite(@quote-symbol);
+		z-index: 1;
+		@media (max-width: @iphone-6-h-break-point) {
+			top: 0;
+		}
+	}
+	.quote {
+		&.left,
+		&.right {
+			width: 50%;
+			padding-left: 15px;
+			padding-right: 15px;
+			float: left;
+		}
+		&.left {
+			padding-right: 75px;
+			border-right: 1px solid #000;
+		}
+
+		&.right {
+			padding-left: 75px;
+			border-left: 1px solid #2a2a2a;
+		}
+
+		@media (max-width: @iphone-6-h-break-point) {
+			&.left,
+			&.right {
+				padding-left: 15px;
+				padding-right: 15px;
+				border: none;
+			}
+		}
+
+		@media (max-width: @iphone-4-h-break-point) {
+			&.left,
+			&.right {
+				width: 100%;
+			}
+		}
+		blockquote {
+			font-family: @helvetica;
+			font-weight: 300;
+			color: #686867;
+			font-size: 20px;
+			line-height: 30px;
+			letter-spacing: 0.025em;
+			border: none;
+			padding: 0;
+			@media (max-width: @phone-break-point) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			footer {
+				padding-top: 14px;
+				font-family: @neue-helvetica;
+				font-weight: 700;
+				color: #9a9ca2;
+				font-size: 12px;
+				letter-spacing: 0.025em;
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}

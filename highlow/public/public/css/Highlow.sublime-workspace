@@ -1,0 +1,1460 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"drop",
+				"dropdown-menu"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"hover-",
+				"hover-lighten-medium"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"ease",
+				"easeInOutQuad"
+			],
+			[
+				"for",
+				"form-wrapper"
+			],
+			[
+				"outer",
+				"outerHeight"
+			],
+			[
+				"overfl",
+				"overflow-y"
+			],
+			[
+				"overf",
+				"overflow-x"
+			],
+			[
+				"out",
+				"outerHeight"
+			],
+			[
+				"down",
+				"download-panel"
+			],
+			[
+				"stick",
+				"sticky-strip"
+			],
+			[
+				"resize",
+				"resizeHandler"
+			],
+			[
+				"aff",
+				"affiliate-login"
+			],
+			[
+				"fisrt",
+				"first-child"
+			],
+			[
+				"add",
+				"addHandler"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"hover-li",
+				"hover-lighten-weak"
+			],
+			[
+				"navab",
+				"navbar-default"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"btn-al",
+				"btn-alternate-bg"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"sec",
+				"section-sub-title"
+			],
+			[
+				"background-",
+				"background-repeat"
+			],
+			[
+				"my-acc",
+				"my-account-mid-tone"
+			],
+			[
+				"my-a",
+				"my-account-mid-tone"
+			],
+			[
+				"btn-default",
+				"btn-default-bg"
+			],
+			[
+				"sectio",
+				"section-title"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"btn-defau",
+				"btn-default-color"
+			],
+			[
+				"btn-defa",
+				"btn-default-color"
+			],
+			[
+				"btn-defu",
+				"btn-default-bg"
+			],
+			[
+				"my-account",
+				"my-account-light-tone"
+			],
+			[
+				"my-account-",
+				"my-account-dark-tone"
+			],
+			[
+				"hover-lig",
+				"hover-lighten-weak"
+			],
+			[
+				"btn-alte",
+				"btn-alternate-color"
+			],
+			[
+				"hover",
+				"hover-lighten-medium"
+			],
+			[
+				"btn-alt",
+				"btn-alternate-bg"
+			],
+			[
+				"footer-",
+				"footer-light-text"
+			],
+			[
+				"hover-light",
+				"hover-lighten-medium"
+			],
+			[
+				"account",
+				"account-menu-background-color"
+			],
+			[
+				"btn-L",
+				"btn-alternate-color"
+			],
+			[
+				"user",
+				"user-menu-border-color"
+			],
+			[
+				"user-m",
+				"user-menu-border-color"
+			],
+			[
+				"heade",
+				"header-link-color"
+			],
+			[
+				"rota",
+				"rotating-strip"
+			],
+			[
+				"rotati",
+				"rotatingStripInit"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"a",
+				"a	Tag"
+			],
+			[
+				"footer-b",
+				"footer-block-background"
+			],
+			[
+				"manage-officer-o",
+				"manage-officer-positions"
+			],
+			[
+				"rad",
+				"randomInt"
+			],
+			[
+				"trainee-po",
+				"trainee-position-profile"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"generateDum",
+				"generateDummyPeople"
+			],
+			[
+				"fac",
+				"faculty"
+			],
+			[
+				"infite",
+				"infiniteScrollHandler"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"acd-clou",
+				"acd-cloud-press"
+			],
+			[
+				"acd-cloud",
+				"acd-cloud-hover"
+			],
+			[
+				"acd-pur",
+				"acd-purple-hover"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"submi",
+				"submitActivity"
+			],
+			[
+				"disable",
+				"disableEdit"
+			],
+			[
+				"generate",
+				"generateDummyRecord"
+			],
+			[
+				"tra",
+				"transaction-history"
+			],
+			[
+				"genera",
+				"generateDummyRecord"
+			],
+			[
+				"random",
+				"randomInt"
+			],
+			[
+				"ran",
+				"randomInt"
+			],
+			[
+				"ra",
+				"randomInt"
+			],
+			[
+				"table",
+				"tableSelector"
+			],
+			[
+				"follow",
+				"followedScreenName"
+			],
+			[
+				"folow",
+				"followedScreenName"
+			],
+			[
+				"fo",
+				"followedUserId"
+			],
+			[
+				"follw",
+				"followedScreenName"
+			],
+			[
+				"transition",
+				"transition-time"
+			],
+			[
+				"infinite",
+				"infiniteScrollHandler"
+			],
+			[
+				"is",
+				"isAtBottom"
+			],
+			[
+				"sub",
+				"subCategory"
+			],
+			[
+				"acd-purpe",
+				"acd-purple-hover"
+			],
+			[
+				"box",
+				"box-title"
+			],
+			[
+				"li",
+				"lighten(color, 10%)"
+			],
+			[
+				"du",
+				"dummyParentOrganisation"
+			],
+			[
+				"dumm",
+				"dummyParentOrganisation"
+			],
+			[
+				"dum",
+				"dummyParentOrganisationInfo"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"font-s",
+				"font-signika"
+			],
+			[
+				"slide",
+				"slideToggle"
+			],
+			[
+				"process",
+				"process-step-time"
+			],
+			[
+				"case",
+				"case-study-content"
+			],
+			[
+				"off-",
+				"off-canvas-slide-time"
+			],
+			[
+				"cherry",
+				"cherry-pink"
+			],
+			[
+				"Sho",
+				"show-case-study"
+			],
+			[
+				"stop",
+				"stopPropagation"
+			],
+			[
+				"preve",
+				"preventDefault"
+			],
+			[
+				"off",
+				"off-canvas-slide-time"
+			],
+			[
+				"togg",
+				"toggleOffCanvas"
+			],
+			[
+				"cherry-",
+				"cherry-pink-shadow"
+			],
+			[
+				"tog",
+				"toggled"
+			],
+			[
+				"touch",
+				"touchstart"
+			],
+			[
+				"test",
+				"testimonials-wrap"
+			],
+			[
+				"swipe",
+				"swipeleft"
+			],
+			[
+				"proce",
+				"process-step-time"
+			],
+			[
+				"pre",
+				"previousIndex"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"scro",
+				"scrollDirection"
+			],
+			[
+				"scr",
+				"scrollDirection"
+			],
+			[
+				"body",
+				"body-text-color"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"sti",
+				"sticky-nav"
+			],
+			[
+				"body-",
+				"body-background-color"
+			],
+			[
+				"sr",
+				"scrollHandlerTimer"
+			],
+			[
+				"scrol",
+				"scrollHandlerTimer"
+			],
+			[
+				"resiz",
+				"resizeHandlerTimer"
+			],
+			[
+				"italic",
+				"italic-serif"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"res",
+				"resizeHandler"
+			],
+			[
+				"bann",
+				"banner"
+			],
+			[
+				"banner",
+				"bannerSeparator"
+			],
+			[
+				"nex",
+				"nextItem"
+			],
+			[
+				"ovef",
+				"overflow-y"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "highlow.less",
+			"settings":
+			{
+				"buffer_size": 128507,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/main-navigation.liquid",
+			"settings":
+			{
+				"buffer_size": 3593,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/splash-navigation.liquid",
+			"settings":
+			{
+				"buffer_size": 1259,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/minimal-header.liquid",
+			"settings":
+			{
+				"buffer_size": 190,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/generic-ctas.liquid",
+			"settings":
+			{
+				"buffer_size": 466,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/demo-signup.liquid",
+			"settings":
+			{
+				"buffer_size": 4451,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/sticky-menu-bar.liquid",
+			"settings":
+			{
+				"buffer_size": 1345,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "highlow.css",
+			"settings":
+			{
+				"buffer_size": 259139,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/README",
+			"settings":
+			{
+				"buffer_size": 407,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/fonts/fonts.less",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/blog.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/converted-html/faq.html",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/converted-html/blog.html",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/layouts/signup-layout.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/common-js.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/layouts/app-landing-layout.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/layouts/layout.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/layouts/splash.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/layouts/tour-layout.liquid",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/converted-html/blog.html",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/sticky-menu-bar.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/converted-html/public/js/highlow.min.js",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/css/ie8.less",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/css/ie8.css",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/converted-html/public/js/highlow.js",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/js/highlow.js",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/css/highlow.less",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/README.log",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/standard-list.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/converted-html/expiry-rate.html",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/standard-content.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/faq.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/main-navigation.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/expiry-rate.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/mixture.json",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/highlow.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/signup-form.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/my-account.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/trade-platform.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/signin-popup.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/index.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/footer.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/minimal-header.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/splash-navigation.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/logout-navigation.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/generic-ctas.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/css/less/bootstrap.less",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/tour.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/app-page.liquid",
+		"/Users/andrewpham/Downloads/detectmobilebrowser.js (1).txt",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/kapitall-strip.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/loggedin-bar.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/faq.liquid",
+		"/Users/andrewpham/Downloads/Stylesheet (11).css",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/css/highlow.css",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/fonts/montserrat-bold.css",
+		"/Users/andrewpham/Downloads/Stylesheet (10).css",
+		"/Users/andrewpham/Desktop/All/sadfasd/mixture.json",
+		"/Users/andrewpham/Downloads/VerbExtralight/verbextralight.css",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/model.liquid",
+		"/Users/andrewpham/Downloads/Stylesheet (9).css",
+		"/Users/andrewpham/Downloads/Stylesheet (8).css",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/my-account-form.liquid",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/css/less/navbar.less",
+		"/Users/andrewpham/Downloads/Stylesheet (6).css",
+		"/Users/andrewpham/Downloads/Stylesheet (7).css",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/sticky-menu.liquid",
+		"/Users/andrewpham/Downloads/Stylesheet (5).css",
+		"/Users/andrewpham/Desktop/HighLow Front-end Local/public/fonts/fonts.css",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/templates/includes/footer.liquid",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/templates/layouts/layout.liquid",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/public/fonts/fonts.css",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/public/fonts/verbmedium-italic.css",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/mixture.json",
+		"/Users/andrewpham/Downloads/Stylesheet (4).css",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/public/fonts/verbbold.min.css",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/public/css/highlow.less",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/public/js/highlow.js",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/public/css/less/bootstrap.less",
+		"/Users/andrewpham/Downloads/Stylesheet (3).css",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/public/css/less/grid.less",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/public/fonts/verbregular.css",
+		"/Volumes/Server/WIP/HighLow/• Multi-country project/Website/HighLow Front-end/templates/index.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup/manage-members-aoi.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup/manage-officer-positions-accreditation-types.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup/manage-committee-types.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/setup-breadcrumb-item.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/setup-manage-positions-breadcrumb-item.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/setup-manage-members-breadcrumb-item.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup/manage-committee-roles.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup/manage-members-contact-tags.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup/manage-officer-positions-terms.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup/manage-officer-positions.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/assets/css/less/ACD.less",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/setup-second-level-menu.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/models/_global.json",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup/manage-members.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/setup-manage-committee-types-sidebar-menu.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/assets/js/acd.js",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/layouts/layout.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/local-training-clusters.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/setup-manage-officer-positions-sidebar-menu.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/setup.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/setup-manage-members-sidebar-menu.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/root-menu.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/committees/add-committee.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/converted-html/assets/js/acd.js",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/committees/committee-added.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/committees/edit-committee.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/committees/committees-dashboard.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/cpd/submit-activity.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/committees-second-level-menu.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/committees-breadcrumb-item.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/create-member/create-member-membership-detail.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/cpd/submit-activity.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/facility-profile.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/add-trainee-position.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/add-trainee-position-generic.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/trainee-position-added.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/profile/practices.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/profile/rural-visits.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/converted-html/assets/js/acd.min.js",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/trainee-positions.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/trainee-position-profile.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/positions-framework-second-level-menu.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/includes/positions-framework-breadcrumb-item.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/facility-added.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/facilities.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/positions-framework/add-facility.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/assets/js/AdminLTE/app.js",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/forgot-password.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/create-member/create-member-confirm-details.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/profile/personal-info.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/profile/areas-of-interest.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/create-member/create-member-personal-info.liquid",
+		"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members/create-member/create-member-site-access.liquid"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/members",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/version1/members/create-member",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/version1",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/templates/version1/members",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/assets/less",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/assets/js/AdminLTE",
+			"/Users/andrewpham/Desktop/Slicing Projects/ACD Admin/assets/less",
+			"/Users/andrewpham/Desktop/Slicing Projects/proscan/public/css/less",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/scripts",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles/lib",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/scripts",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/views",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/Resources/views",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/Application/Sonata/UserBundle",
+			"/Users/andrewpham/Sites/hcp_main/httpdocs/src/HCP/MeetingsBundle/Resources/public/app/styles"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"select-wrap",
+			"href='../",
+			"href=\"../",
+			"src=\"../",
+			"src='../",
+			"href='../",
+			"href=\"../",
+			"font-weight",
+			"font-verb",
+			"modal-footer",
+			"../images",
+			"src=\"../",
+			"url(..",
+			"url(/",
+			"fade",
+			"href",
+			".opacity",
+			"console.log",
+			"href",
+			"937",
+			".dropdown-me",
+			"#account",
+			".tab-full-width",
+			"#my-account",
+			"#account-balance",
+			"toggle",
+			"5em",
+			".grey",
+			"pagination",
+			"overflow-x: scroll",
+			"page",
+			".std",
+			"data-th=\"take payout\"",
+			".btn",
+			".footer-cta-wrapper",
+			"affiliate",
+			".modal-footer",
+			"> ul",
+			"&",
+			"headed-list",
+			".tab-full-width",
+			".tab-selector",
+			"odd",
+			"#my-account",
+			"tab-full-width",
+			".bg",
+			".headline-conten",
+			"select-wrap",
+			".form-control",
+			"label-on-top",
+			"FullHeightHE",
+			"href=\"/tour",
+			"TAKE THE TOUR",
+			"FullHeight",
+			"padding: .75em 0 .5em;",
+			"padding: .75em 0 .5em;padding: .75em 0 .5em;",
+			"padding: .75em 0 .5em;",
+			".table",
+			"table",
+			".tab-full-width",
+			"#affiliate-login",
+			"affiliate-login",
+			"affiliation",
+			"header",
+			".grey",
+			"tab",
+			"tab\"",
+			"tab",
+			".bg",
+			".std-list",
+			".input-wrap",
+			"form-control",
+			"form-wrapper",
+			".minimal",
+			"fixed",
+			".out",
+			".hero-content",
+			"splash",
+			"toggle",
+			"splash",
+			"strong",
+			".hero-content",
+			".hero {",
+			"headline.demo",
+			"navbar-default",
+			"media",
+			"14",
+			"1439",
+			"fixed",
+			".fixed",
+			".splash-nav",
+			"header",
+			".parallax",
+			".bg",
+			".cta",
+			"fullHeight",
+			",hero",
+			".headline",
+			"cta-strip",
+			".tab-full",
+			"toggl",
+			"toggle",
+			".download-panel-header",
+			"isMObile",
+			"toggle",
+			".sticky",
+			"animate",
+			"tab-full-width",
+			"form {",
+			"form-footer",
+			"input-wrap",
+			"full-width",
+			".tab-side",
+			"!important",
+			".intro",
+			"display: table;\n		width: 100%;\n		position: relative;\n		.tab-side-bar-pseudo-row {\n			display: table-row;\n		}\n		.tab-selector-wrap {\n			display: table-cell;\n			vertical-align: top;\n			background-color: @kerb;\n			width: 28%;\n			ul {\n				margin: 0;\n				border: none;\n				> li {\n					.transition(background-color 0.3s ease);\n					border: none;\n					display: block;\n					text-align: left;\n					border-radius: 0px;\n					float: none;\n					font-size: 1.25em;\n					> a {\n						border: none;\n						border-radius: 0px;\n						display: block;\n						font-weight: 600;\n						font-size: 0.68em;\n						padding: 1.75em 0em 1.25em;\n						margin: 0em 1.25em;\n						.transition(border 0s ease);\n					}\n					&:hover {\n						> a {\n							background: none;\n							border-top: none;\n							border-left: none;\n							border-right: none;\n						}\n					}\n					&.active,&:hover.active {\n						> a {\n							background: none;\n							padding: 1.75em 0em 1.25em;\n							border: none;\n							margin: 0em 1.25em;\n						}\n					}	\n				}\n			}\n		}\n		.tab-content-wrap {\n			display: table-cell;\n			width: 72%;\n			vertical-align: top;\n			> .tab-content {\n				> .tab-pane {\n					position: relative;\n					.clearfix();\n					padding: 2.25em 2.5em 2.125em;\n				}\n			}\n		}\n	}",
+			"affiliate-login",
+			"footer-cta",
+			"cycle",
+			"footer",
+			"#footer-mobile",
+			"#foote",
+			"form-wrapper",
+			"margin-top: 1em",
+			"#step-4",
+			".hero",
+			".cta",
+			".hero"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"href='",
+			"href=\"",
+			"src=\"",
+			"src='",
+			"href='",
+			"href=\"",
+			"src=\"",
+			"overflow-x: auto",
+			"",
+			"class=\"no-header-collapse\"",
+			"",
+			"href=\"/highlow",
+			"HIGHLOW",
+			"icon price-up\"",
+			"icon price-down\"",
+			"price-down\"",
+			"price-up\"",
+			"",
+			"md-",
+			"section-title",
+			"account-menu",
+			"url('../fonts/",
+			"data:image/png",
+			"Edit",
+			"Delete",
+			"Edit",
+			"edit-",
+			"trainee-position-profile",
+			"acilit",
+			"Facilit",
+			"facilit",
+			"Facilities",
+			"Facility",
+			"facility",
+			"Facilities",
+			"dummyFacultyType",
+			"dummyFacultyName",
+			"",
+			"<a href='members/dashboard.html'>View</a>",
+			"",
+			"<option value=\"\">",
+			"edit",
+			"",
+			"Create member",
+			"/version1/cpd/course-administration",
+			"href=\"#\"",
+			"#remove-document",
+			"",
+			"exe",
+			"",
+			"Faculty",
+			"td",
+			"qualification",
+			"membership",
+			"academic",
+			"edit-",
+			"-visit",
+			"visit",
+			"edit-",
+			"\"children\" : {}",
+			"2045",
+			"Auldrey",
+			"John",
+			"Type",
+			"Position",
+			"Status",
+			"//console.log",
+			"new-",
+			"col-xs",
+			"col-sm",
+			"length-1",
+			"acd.members.profile.personalInfo.dummyType",
+			"<button class=\"btn btn-primary\">Select</button>",
+			"<a href=\"#\"",
+			"src=\"/assets/js",
+			"img src=\"/assets/",
+			"href=\"/assets/",
+			"href=\"assets/",
+			"last",
+			"style=\"-webkit-font-smoothing: antialiased; font-family",
+			"mar_winners",
+			"eje28",
+			"Croatia - April 2014",
+			"show-pop-up",
+			"148px",
+			"width: 142px",
+			"-142px",
+			"class=\"close-link",
+			".close-link",
+			"data-menu-offset=\"-46\"",
+			"Croatia",
+			"Coast Lovers",
+			"eje27",
+			"src=\"",
+			"Tango Dancers Wanted",
+			"Buenos Aires",
+			"eje26",
+			"croatia",
+			"",
+			"Coast Lover",
+			"Croatia",
+			"src=\"",
+			"eje27",
+			"eje26",
+			"eje28",
+			"src=\"",
+			"src=\"/",
+			"src=\"",
+			"Medicare Local Region",
+			".updateTinyscrollbar();",
+			"updateInnerTinyscrollbar()",
+			"#{$img-path}",
+			"visible-xs visible-sm",
+			"hidden-xs hidden-sm",
+			"margin-left: -20px",
+			"",
+			"maxlength",
+			"\"",
+			"style=\" -webkit-font-smoothing: antialiased; ",
+			"font-weight: 300"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "highlow.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 128507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5015,
+								5015
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3205.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/main-navigation.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2609,
+								2609
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 271.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/splash-navigation.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1259,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								796,
+								796
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/minimal-header.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/generic-ctas.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/demo-signup.liquid",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 282.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/templates/includes/sticky-menu-bar.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1220,
+								1220
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "highlow.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 259139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/andrewpham/Desktop/HighLow Front-end Local/README",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								407,
+								407
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.50868319477,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Highlow.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 404.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 346.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

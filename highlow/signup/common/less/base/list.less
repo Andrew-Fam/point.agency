@@ -1,0 +1,31 @@
+ul.hl-list {
+	padding: 0;
+	margin: 0;
+	li {
+		display: block;
+		list-style-type: none;
+		padding-left: 16px;
+		position: relative;
+	}
+	&.bulleted {
+		li {
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		&.yellow-bullet {
+			li {
+				padding-left: @yellow-bullet-width + 12px;
+				&:before {
+					top: 6px;
+					.sprite(@yellow-bullet);
+				}
+			}
+		}
+	}
+}

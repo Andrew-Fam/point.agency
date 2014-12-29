@@ -1,0 +1,58 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=2e5e0bd1-30ae-4c53-bc44-c7210eefe52c");
+@font-face {
+  font-family: "Engschrift DIN 1422 W01_R4";
+  src: url("../Fonts/bdae0fbf-219d-4d3a-98f0-c6eda8a5d3ae.eot?#iefix") format("eot");
+}
+.hero .cta a {
+  line-height: 3em;
+}
+.hero .headline h1 {
+  font-family: 'Engschrift DIN 1422 W01_R4', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.hero #im-new {
+  background: #ffe048 !important;
+  position: relative;
+}
+.hero #im-new img {
+  position: absolute;
+  height: 1em;
+  top: 1em;
+  left: 3em;
+  bottom: 1em;
+}
+.hero #im-new:hover img {
+  left: 1em;
+}
+.hero #im-experienced {
+  background: #ffeb5e !important;
+  position: relative;
+}
+.hero #im-experienced img {
+  position: absolute;
+  height: 1em;
+  top: 1em;
+  right: 3em;
+  bottom: 1em;
+}
+.hero #im-experienced:hover img {
+  right: 1em;
+}
+.hero .hero-content.tour p {
+  width: 35.5em;
+}
+.hero .hero-content.tour .btn {
+  margin-right: 1.5em;
+}
+.parallax .section-title {
+  font-family: 'Engschrift DIN 1422 W01_R4', sans-serif;
+}
+.fade-able {
+  z-index: 1;
+  visibility: visible;
+}
+.fade-able.faded {
+  z-index: -1;
+  visibility: hidden;
+}

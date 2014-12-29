@@ -1,0 +1,134 @@
+#layout-header {
+	background: url("http://en.highlow.net/Themes/FxTradeAustralia/Content/images/header-bgr.png") repeat-x 0 0 #161616;
+	-webkit-box-shadow: 0 -2px 3px 3px #000;
+	box-shadow: 0 -2px 3px 3px #000;
+	font-size: 10px;
+}
+
+#branding {
+	font-family: Tahoma,Arial,Helvetica,sans-serif;
+	font-size: 2.9em;
+	padding: 0;
+	margin: 6px 0 0 16px;
+	float: left;
+	background: url("http://en.highlow.net/Themes/FxTradeAustralia/Content/images/logo.gif") no-repeat 0 10px;
+	width: 200px;
+	height: 80px;
+	margin-left: 0px;
+	clear: both;
+	display: block;
+	&.centered {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media (max-width: @phone-break-point) {
+		&.centered {
+			float: left;
+		}
+		background-size: 100% auto;
+		margin-left: 0;
+		margin-right: 0;
+		width: 120px;
+		height: 48px;
+		position: relative;
+		top: -16px;
+	}
+}
+
+#CultureName_iconselect {
+	.culture {
+		padding: 2px 0 2px 28px;
+		position: relative;
+		display: block;
+		height: 19px;
+		&.en-US {
+			background: url("http://en.highlow.net/Themes/FxTradeAustralia/Content/Images/en-US.png") no-repeat scroll 6px 4px transparent;
+		}
+
+		&.ja-JP {
+			background: url("http://en.highlow.net/Themes/FxTradeAustralia/Content/Images/ja-JP.png") no-repeat scroll 6px 4px transparent;
+		}
+	}
+}
+
+#header .header-zone-top {
+	min-height: 26px;
+	font-size: 10px;
+	line-height: 27px;
+	color: #FFF;
+	width: 260px;
+	float: left;
+	-webkit-font-smoothing: initial;
+	@media (max-width: @phone-break-point) {
+		width: 100%;
+	}
+}
+
+#header article.widget-culture-picker-widget {
+	display: block;
+	height: 20px;
+	padding: 3px 1px 3px 3px;
+	width: 131px;
+	float: right;
+
+	@media (max-width: @phone-break-point) {
+		position: relative;
+		top: 23px;
+	}
+}
+
+#header .changeCulture {
+	color: #fefefe;
+	float: right;
+	width: 119px;
+	text-align: left;
+	font-size: 10px;
+	background-color: #222;
+	height: 20px;
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: 6px center;
+}
+
+.changeCulture label {
+	display: none;
+}
+
+#CultureName_holder {
+	width: 118px;
+	overflow: hidden;
+	display: none;
+	background-color: #222;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	border-top: none!important;
+	font-size: 12px;
+}
+#CultureName_holder .selectitems {
+	text-decoration: none;
+	display: block;
+	padding: 4px 0 1px 0;
+	color: #fff;
+	border-top: 1px dotted #444;
+}
+
+#CultureName_iconselect {
+	margin: 0 auto;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1999;
+	position: absolute;
+	width: 118px;
+	height: auto;
+	line-height: 15px;
+	font-size: 12px;
+	background: url("http://en.highlow.net/Themes/FxTradeAustralia/Content/images/arrow-down.gif") 103px 6px no-repeat;
+	border: 1px solid #333;
+	border-radius: 3px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+

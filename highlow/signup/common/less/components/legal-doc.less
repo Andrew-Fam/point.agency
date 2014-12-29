@@ -1,0 +1,54 @@
+.legal-doc {
+	width: 62px;
+	height: 88px;
+	display: block;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	cursor: pointer;
+	&.pds {
+		background-image: url(../images/pds.png);
+	}
+	&.account-tnc {
+		background-image: url(../images/account-tnc.png);
+	}
+	&.financial-services-guide {
+		background-image: url(../images/financial-services-guide.png);
+	}
+	&.privacy-policy {
+		background-image: url(../images/privacy-policy.png);
+	}
+
+	.overlay {
+		background-color: rgba(23,23,23,0.8);
+		color: white;
+		text-decoration: none;
+		font-family: @neue-helvetica;
+		font-weight: 400;
+		font-size: 10px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		cursor: pointer;
+		display: table;
+		.doc-title {
+			cursor: pointer;
+			font-weight: 400;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+		.opacity(0);
+		.transition(opacity 0.2s ease);
+	}
+
+	&:hover {
+		.overlay {
+			.opacity(1);
+		}
+	}
+}

@@ -1,0 +1,8 @@
+body:before { 
+                            white-space: pre; 
+                            font-family: monospace; 
+                            content: 'Less NameError: variable @elephant is undefined in \\Users\\apham\\development\\highlow\\public-page\\public\\trade-platform\\less\\components\\tooltip.less on line 1, column 14: \A 1 @tooltip-bg: @elephant; \A 2 @tooltip-shadow: black; \A  \A '; } 
+                            
+                            body * { 
+                            display: none; 
+                            } 

@@ -1,0 +1,2359 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HighLow HTML template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/521a1bbb-4492-4625-bae8-58bf3edd68bf.css"/>
+        <link href="public/css/highlow.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+        <!--[if lt IE 9]>
+            <link href="public/css/ie8.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <![endif]-->
+
+
+        <!--[if lt IE 9]>
+        
+        <script src="public/js/html5shiv.min.js"></script>
+        <script src="public/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <div id="user-bar" class="sticky-strip">
+  <div class="content">
+    <div class="container clearfix visible-logged-in">
+      <div class="pull-left site-settings">
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="jp"><b>日本語</b></span> <span class="icon drop-down"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#"><span class="jp"><b>日本語</b></span></a></li>
+          </ul>
+        </a>
+        <span class="hidden-xs hidden-sm">
+          <span id="date">15 June, 2014</span> <span id="time">17:28:01</span> <span id="timezone">[Syd]</span>
+        </span>
+      </div>
+      <div class="pull-right login">
+        <span class="icon user-small-borderless"></span> Welcome <span id="username">Jon</span> <a href="#" id="logout-trigger-button" class="btn btn-alternate btn-sm">LOG OUT</a>
+      </div>
+    </div>
+    <div class="container clearfix hidden-logged-in">
+      <div class="pull-left site-settings">
+        <a class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <span class="icon drop-down"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">English</a></li>
+            <li><a href="#">日本語</a></li>
+          </ul>
+        </a>
+        <span class="hidden-xs hidden-sm">
+          <span id="date">15 June, 2014</span> <span id="time" class="highlight">17:28:01</span> <span id="timezone" class="highlight">[Syd]</span>
+        </span>
+      </div>
+      <div class="pull-right login"><span class="icon move-in hidden-xs"></span> <a id="go-to-full-demo" href="#" data-toggle="modal" data-target="#demo-signup-popup" class="highlight hidden-xs">Full demo</a>
+        <span class="icon user-small-borderless"></span> <span class="hidden-xs">Existing user?</span> <a id="username" class="highlight" href="#" data-toggle="modal" data-target="#signin-popup">Log in</a> <a href="signup-form.html" class="btn btn-alternate btn-sm"><span class="hidden-xs">JOIN NOW - IT'S FREE</span><span class="hidden-sm hidden-md hidden-lg visible-xs">JOIN NOW FREE!</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" role="navigation" id="common-nav">
+  <div class="content">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a href='highlow.html' class="high-low pull-left icon"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="trade-platform.html">TRADE</a></li>
+          <li><a href="highlow.html">HIGHLOW</a></li>
+          <li><a href="why-highlow.html">WHY HIGHLOW?</a></li>
+          <li class="dropdown last-child">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES <span class="icon drop-down"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="about.html">ABOUT US</a></li>
+              <li><a href="how-to-trade.html">HOW TO TRADE</a></li>
+              <li><a href="faq.html">FAQ&rsquo;s</a></li>
+              <li><a href="expiry-rate.html">EXPIRY RATES</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="option-schedules.html">OPTIONS SCHEDULE</a></li>
+              <li><a href="app-page.html">APPS DOWNLOAD</a></li>
+              <li><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </div>
+</nav>
+<div class="modal fade" id="signin-popup" tabindex="-1" role="dialog" > 
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="signin-popup-label"> <span class="icon user-border-less"></span> SIGN IN TO HIGHLOW  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-wrapper padding-less">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="input-wrap label-on-top">
+                    <label>Username</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-wrap label-on-top">
+                    <label>Password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="modal-footer-pseudo-table">
+            <div class="row">
+              <small class="col-sm-6">
+                <a href="index.html">Forgot your password?</a>
+              </small>
+              <div class="col-sm-6 modal-action">
+                <button id="login-trigger-button" class="btn btn-default btn-lg btn-extruded pull-right">
+                  SIGN IN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade modal-large" id="demo-signup-popup" tabindex="-1" role="dialog" > 
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="demo-signup-popup-label">SIGN UP FOR THE FULL <strong>100% FREE</strong> DEMO  <button type="button" class="close icon" data-dismiss="modal"><span class="sr-only">Close</span></button></h4>
+        </div>
+        <div class="modal-body">
+          <p>Complete the form below for your free 30 day trial.</p>
+          <div class="form-wrapper padding-less">
+            <form>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label><span>First Name*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Last Name*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Country*</label>
+                    <div class="input-wrap">
+                      <select class="form-control">
+                        <option>Select your country</option>
+                        <option>Australia</option>
+                        <option>Japan</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Contact Number*</span></label>
+                    <div class="input-wrap">
+                      <input type="text" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Email*</label>
+                    <div class="input-wrap">
+                      <input type="email" class="form-control" value=""/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label><span>Referal source*</span></label>
+                    <div class="input-wrap">
+                      <select class="form-control">
+                        <option>Select source</option>
+                        <option>Friends</option>
+                        <option>Trading blog</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 hidden-xs">
+                  <div class="content-wrapper">
+                    <div class="small-sub-title">LEARN AS YOU TRADE!</div>
+                    <ul>
+                      <li>
+                        Trade forex, indices, commodities &amp; Stocks
+                      </li>
+                      <li>
+                        Use $20,000 virtual funds
+                      </li>
+                      <li>
+                        Try HighLow, Spread HighLow and On Demand Binary Options
+                      </li>
+                      <li>
+                        Trade without spreads or charges
+                      </li>
+                      <li>
+                        No need to download – the program is web-based
+                      </li>
+                      <li>
+                        Know immediately how much you would gain/risk
+                      </li>
+                      <li>
+                        Trades from as little as USD10
+                      </li>
+                    </ul> 
+                  </div>
+                </div>  
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer clearfix">
+          <div class="modal-footer-pseudo-table">
+            <div class="row">
+              <small class="col-sm-6">
+                HIGHLOW protects the privacy of your personal information. View our <a href="">Privacy Policy</a>.
+              </small>
+              <div class="col-sm-6 modal-action">
+                <button class="wizard-next-step btn btn-default btn-lg btn-extruded pull-right">
+                  CREATE FREE DEMO ACCOUNT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+            <nav class="navbar navbar-default sticky-strip visible-logged-in" id="account-menu-bar-wrapper">
+	<div class="content">
+		<div id="account-menu-bar">
+			<div class="container clearfix">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#account-bar">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+			    <div id="account-balance">
+					<h4>
+						Account Balance
+					</h4>
+					<span id="balance">$20,548.00</span>
+					<span class="icon plus"></span>
+				</div>
+			    <div class="collapse navbar-collapse" id="account-bar">
+					<ul class="clearfix nav navbar-nav">
+						<li class="first-child">
+							<a href="">
+								Help Centre
+							</a>
+						</li>
+						<li>
+							<a href="">
+								View Trade Actions
+							</a>
+						</li>
+						<li class="dropdown last-child active">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">
+								My Account <span class="icon drop-down"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+					            <li><a href="my-account.html">Dashboard</a></li>
+					            <li><a href="my-account.html">My Details</a></li>
+					          </ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+        </header>
+        
+<div class="std-cont">
+	<div class="container">
+		<h1 class="section-title">FREQUENTLY ASKED QUESTIONS</h1>
+		<div class="row">
+			<div class="col-sm-8 col-md-9 main-cont article-page">
+				<p class="section-sub-title">
+					HIGHLOW wants you to have the most rewarding Binary Options trading experience available. Here we answer the questions you might have about investing with HIGHLOW and the exciting world of Binary Options trading.
+				</p>
+				<div class="tab-side-bar grey">
+			  		<div class="tab-side-bar-pseudo-row">
+				  		<div class="tab-selector-wrap">
+				  			<div class="tab-selector">
+								<ul class="nav nav-tabs" role="tablist">
+								  <li class="active"><a href="#featured-questions" role="tab" data-toggle="tab"></span>Featured questions</a></li>
+								  <li><a href="#account" role="tab" data-toggle="tab">Account	</a></li>
+								  <li><a href="#binary-options" role="tab" data-toggle="tab">Binary Options</a></li>
+								  <li><a href="#privacy" role="tab" data-toggle="tab">Privacy</a></li>
+								  <li><a href="#trading" role="tab" data-toggle="tab">Trading</a></li>
+								  <li><a href="#general" role="tab" data-toggle="tab">General</a></li>
+								</ul>
+							</div>
+				  		</div>
+				  		<div class="tab-content-wrap">
+							<div class="tab-content">
+							  	<div class="tab-pane active" id="featured-questions">
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#what-is-binary-option">
+							  				What is a Binary Option?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="what-is-binary-option">
+							  				<div class="expandable-content main-cont">
+							  					An investment option in which the payout is structured to be either a fixed amount of money if the option expires in the money, or nothing if the option expires out of the money.
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#how-do-i-fund-my-account">
+							  				How do I fund my account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="how-do-i-fund-my-account">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Simply log in to 'My Account', click on 'Deposit'  and follow the prompts to fund your account. HIGHLOW accepts payments via credit cards, SKRLL and NETELLER.
+												</p>
+												<p>
+													Deposits received by 2pm on weekdays will be processed by the close of that day.
+												</p>
+												<p>
+													You will be notified by email once your account has been successfully
+funded. 
+												</p>
+												<h6>*Please note that the minimum deposit amount is AUD $10.</h6>
+
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#are-my-fund-safe">
+							  				Are my funds safe?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="are-my-fund-safe">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Client funds are held in segregated trust accounts with National Australia Bank (NAB).
+												</p>
+												<p>
+													Unlike other providers we do not use your deposits or your unrealised profits to hedge in the underlying market. We only use our own funds for hedging.
+												</p>
+							  				</div>							  	
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#how-do-i-open-a-live-account">
+							  				How do I open a live account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="how-do-i-open-a-live-account">
+							  				<div class="expandable-content main-cont">
+							  					To open a live account, please click <a href="signup-form.html">here</a>. The process only takes about 10 minutes and you will then have immediate access to your trading account.
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#is-spread-highlow-available-on-smartphone">
+							  				Is Spread HIGHLOW available on smartphone?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="is-spread-highlow-available-on-smartphone">
+							  				<div class="expandable-content main-cont">
+							  					Yes, we have versions for Android and Apple. Click <a href="app-page.html">here</a> to download.
+							  				</div>
+							  			</div>
+							  		</div>
+									<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#major-advantage">
+							  				What are the major advantages of Binary Options?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="major-advantage">
+							  				<div class="expandable-content main-cont">
+							  					<p>Unlike many conventional trading products, Binary Options give you:</p>
+							  					<ul>
+							  						<li>
+							  							<h3>Convenience</h3>
+							  							Forget about leaving orders, constantly monitoring your position or worrying about when to exit a trade. 
+							  						</li>
+							  						<li>
+							  							<h3>Control</h3>
+							  							You know exactly the possible outcomes of a trade, even before you enter it.
+							  						</li>
+							  						<li>
+							  							<h3>
+							  								Accessibility
+							  							</h3>
+							  							Open an account and start trading with HIGHLOW from as little as $10.
+							  						</li>
+							  						<li>
+							  							<h3>
+							  								Simplicity
+							  							</h3>
+							  							Just click, invest and you're away.
+							  						</li>
+												</ul>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#what-is-highlow-option">
+							  				What is a HIGHLOW option?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="what-is-highlow-option">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Our HIGHLOW option is conventional binary option that shows the mid or at-the-money price.
+							  					</p>
+							  					<p>
+													HIGHLOW offers payouts of 180% to 190%.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#how-to-open-demo-account">
+							  				How do I open a Demo Account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="how-to-open-demo-account">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Simply click on Free Demo on our homepage to open a 100% free Demo Account and practice trading Binary Options with $10,000 of virtual funds. 
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#bonus">
+							  				Does HIGHLOW offer any bonuses?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="bonus">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Yes! Open a new account and you can currently be rewarded with up to $50 cashback on your first trade.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  	</div>
+							  	<div class="tab-pane" id="account">
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-how-do-i-fund-my-account">
+							  				How do I fund my account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-how-do-i-fund-my-account">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Log in to 'My Account' and click on 'Deposit' to fund your account.
+												</p>
+												<p>
+													Deposits received by 2pm on weekdays will be processed by the close of that day.
+												</p>
+												<p>
+													You will be notified by email once your account has been successfully funded.
+												</p>
+												<h6>*Please note that the minimum deposit amount is AUD $10.</h6>
+
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-are-my-fund-safe">
+							  				Are my funds safe?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-are-my-fund-safe">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Client funds are held in segregated trust accounts with National Australia Bank (NAB).
+												</p>
+												<p>
+													Unlike other providers we do not use your deposits or your unrealised profits to hedge in the underlying market. We only use our own funds for hedging.
+												</p>
+							  				</div>							  	
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-how-do-i-open-a-live-account">
+							  				How do I open a live account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-how-do-i-open-a-live-account">
+							  				<div class="expandable-content main-cont">
+							  					To open a live account, please click <a href="signup-form.html">here</a>. The process only takes about 10 minutes and you will then have immediate access to your trading account.
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-how-to-open-demo-account">
+							  				How do I open a Demo Account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-how-to-open-demo-account">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Simply click on Free Demo on our homepage to open a 100% free Demo Account and practice trading Binary Options with $10,000 of virtual funds.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-bonus">
+							  				Does HIGHLOW offer any bonuses?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-bonus">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Yes! Open a new account and you can currently be rewarded with up to $50 cashback on your first trade.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-cancel-withdrawal-request">
+							  				Can I cancel a withdrawal request
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-cancel-withdrawal-request">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Yes. You may cancel a same day withdrawal before 2pm AEST (Australian Eastern Standard Time).
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-use-withdrawal-fund-for-trading">
+							  				Can I use the funds in my withdrawal request for trading?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-use-withdrawal-fund-for-trading">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No. The withdrawal amount requested will already be deducted from your account balance awaiting processing.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-are-you-regulated">
+							  				Are you regulated?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-are-you-regulated">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						HIGHLOW holds an Australian Financial Services License (AFSL 364264).
+							  					</p>
+							  					<p>
+							  						ASIC requires licensees to meet strict capital requirements and to implement and comply with internal procedures including risk management, staff training, accounting and audits.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-how-to-withdraw">
+							  				How do I withdraw from my account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-how-to-withdraw">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Simply log in to 'My Account' and click on 'Withdrawal' and submit the amount you would like to withdraw.
+							  					</p>
+							  					<p>
+							  						All withdrawal requests made by 2pm business days will be processed on the same day.
+							  					</p>
+							  					<p>
+							  						Please allow between 1-3 working days for receipt of funds into your nominated bank account.
+							  					</p>
+							  					<p>
+							  						The minimum amount of withdrawal is AUD $10.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-lost-username">
+							  				What do I do if I lose my username?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-lost-username">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Please contact HIGHLOW, our contact details can be found  <a href="contact-us.html">here</a>.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-maximum-withdraw-per-day">
+							  				What is the maximum I can withdraw per day?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-maximum-withdraw-per-day">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						You may withdraw your entire account at any time.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-minimum-deposit">
+							  				What is the minimum deposit amount into a HIGHLOW account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-minimum-deposit">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The minimum deposit amount is $10 AUD.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-minimum-account-size">
+							  				What is the minimum account size?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-minimum-account-size">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The minimum account size is $10 AUD.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-how-long-before-withdraw">
+							  				Once the bonus is received, how long must I wait before I may withdraw? Do I have to fulfill a minimum amount of trades before I can withdraw?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-how-long-before-withdraw">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The cash bonus is applicable to the first trade. If you trade 10 dollars then you will receive 10 dollars, if you trade 50 then you will receive 50. There is no time restriction on when you may withdraw. There is no restriction on the amount of trades you must trade before withdrawal.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-what-currency">
+							  				What currency may I deposit?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-what-currency">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Currently you may only deposit in Australia Dollar and Japanese Yen for Bankwires. Our credit card service support all major currencies. 
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-is-australia-only">
+							  				Is the HighLow platform only open to Australians?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-is-australia-only">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No. Anyone can sign up and trade with HIGHLOW. You may deposit via Neteller and Credit Cards. Please note you will be required to provide a secondary ID for verification purposes such as a gas, water or electricity bill.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-any-fees">
+							  				Are there any fees when depositing and withdrawing by Neteller?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-any-fees">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No. There are no deposit fees.
+							  					</p>
+							  					<p>
+							  						There is, however, a 2% withdrawal fee, deducted from your withdrawal amount, for withdrawals to Neteller.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-withdraw-less-than-10">
+							  				How do I withdraw less than $10 by bank transfer?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-withdraw-less-than-10">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						You can only withdraw less than $10 if you are closing your account. Please contact support and we will process the request for you.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-neteller-minimum-withdrawal">
+							  				What is the minimum withdrawal amount to Neteller?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-neteller-minimum-withdrawal">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The minimum withdrawal amount to Neteller is $50.
+							  					</p>
+							  					<p>
+							  						You can only withdraw less than $10 if you are closing your account. Please contact support and we will process the request for you.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-how-much-demo-account">
+							  				What funds are available in the HIGHLOW demo account?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-how-much-demo-account">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						HIGHLOW demo account initially gives you a balance of $10,000 AUD
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-overseas-bank">
+							  				Can I withdraw and/or deposit from overseas banks?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-overseas-bank">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Yes. When you set up your account, you will be required to provide your correct bank details to deposit or receive funds. As HIGHLOW has an Australian bank account, fees will apply for overseas transfers. Please contact your bank for details of these charges. Please note that HIGHLOW can transfer funds in AUD or Japanese Yen and your account needs to be denominated in these currencies.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-credit-card-deposit-fee">
+							  				What is the fee for depositing via credit card?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-credit-card-deposit-fee">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Please check scheduled fees with your card provider.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-credit-card-stored">
+							  				Is my credit card information stored on your website?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-credit-card-stored">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No. We do not store credit card information on our servers. The information is held by National Australia Bank.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-withdraw-to-credit-card">
+							  				Can I withdraw onto my credit card?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-withdraw-to-credit-card">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No. You may only withdraw to a nominated bank account in your name.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#acc-minimum-credit-card-deposit">
+							  				What is the minimum credit card deposit?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="acc-minimum-credit-card-deposit">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The minimum deposit is $50 AUD
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  	</div>
+							  	<div class="tab-pane" id="binary-options">
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#binary-what-is-binary-option">
+							  				What is a Binary Option?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="binary-what-is-binary-option">
+							  				<div class="expandable-content main-cont">
+							  					An investment option in which the payout is structured to be either a fixed amount of money if the option expires in the money, or nothing if the option expires out of the money.
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#binary-is-spread-highlow-available-on-smartphone">
+							  				Is Spread HIGHLOW available on smartphone?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="binary-is-spread-highlow-available-on-smartphone">
+							  				<div class="expandable-content main-cont">
+							  					Yes, we have versions for Android and Apple. Click <a href="app-page.html">here</a> to download.
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#binary-major-advantage">
+							  				What are the major advantages of Binary Options?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="binary-major-advantage">
+							  				<div class="expandable-content main-cont">
+							  					<p>Unlike many conventional trading products, Binary Options give you:</p>
+							  					<ul>
+							  						<li>
+							  							<h3>Convenience</h3>
+							  							Forget about leaving orders, constantly monitoring your position or worrying about when to exit a trade. 
+							  						</li>
+							  						<li>
+							  							<h3>Control</h3>
+							  							You know exactly the possible outcomes of a trade, even before you enter it.
+							  						</li>
+							  						<li>
+							  							<h3>
+							  								Accessibility
+							  							</h3>
+							  							Open an account and start trading with HIGHLOW from as little as $10.
+							  						</li>
+							  						<li>
+							  							<h3>
+							  								Simplicity
+							  							</h3>
+							  							Just click, invest and you're away.
+							  						</li>
+												</ul>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#binary-what-is-highlow-option">
+							  				What is a HIGHLOW option?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="binary-what-is-highlow-option">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Our HIGHLOW option is conventional binary option that shows the midprice (also known as the at-the-money price).
+												</p>
+												<p>
+							  						HIGHLOW offers payouts of 180% to 190%.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#binary-what-is-spread-highlow-option">
+							  				What is a Spread HIGHLOW option?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="binary-what-is-spread-highlow-option">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						A new type of option that shows a bid/ask spread, the standard method of price making in the forex markets.
+							  					</p>
+							  					<p>
+							  						Spread HIGHLOW offers payouts of 200%, or double your investment.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#binary-what-is-underlying-asset">
+							  				What are the 'underlying' assets?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="binary-what-is-underlying-asset">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The underlying assets are assets from which HIGHLOW Binary Options are derived.
+							  					</p>
+							  					<p>
+							  						Currently these include currency pairs and stock indices.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#binary-what-is-OOD">
+							  				What is Option On Demand (OOD)?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="binary-what-is-OOD">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						As the name suggest, Options On Demand may be purchased at the discretion of the investor, depending on your preference. They may vary in duration from 1 minute to 3 minutes, 5 minutes or even longer. 
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  	</div>
+							  	<div class="tab-pane" id="privacy">
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#privacy-credit-card-stored">
+							  				Is my credit card information stored on your website?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="privacy-credit-card-stored">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No. We do not store credit card information on our servers. The information is held by National Australia Bank.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  	</div>
+							  	<div class="tab-pane" id="trading">
+									<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-upper-limit-total-investment">
+							  				Is there an upper limit for the total investment amount of multiple transactions?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-upper-limit-total-investment">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						For options that have not yet been settled prior to expiry time, the maximum investment amount for options which may be held (by our customers) is $100,000 AUD or USD.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-why-spread-narrow">
+							  				Why does the spread narrow as the option moves closer to expiry?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-why-spread-narrow">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Because the implied volatility is lower as the option matures, the spread narrows due the payout being fixed.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-is-spread-fixed">
+							  				Is the spread fixed?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-is-spread-fixed">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No, the spread is variable. In general, the shorter the time left until expiry, the narrower the spread.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-what-currency-available">
+							  				What are the currency pairs available to trade under HIGH/LOW?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-what-currency-available">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						At present, we offer 9 Currency Pairs (AUD/JPY, AUD/USD, EUR/JPY, EUR/USD, GBP/JPY, GBP/USD, USD/JPY, NZD/JPY, NZD/USD)
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-can-option-be-exercised-early">
+							  				Can the option be exercised early if required?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-can-option-be-exercised-early">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Yes, You have the right to close the option early (before trade end time). Please refer to the How to Trade page for instructions.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-can-I-purchase-a-call-and-a-put">
+							  				Can I purchase a call(high) and a put(low) on the same option?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-can-I-purchase-a-call-and-a-put">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Yes, you can. This is a hedge.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-if-option-expired-will-I-get-investment-back">
+							  				If an option expired at the money (contract rate=expiry rate) will I get my investment back?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-if-option-expired-will-I-get-investment-back">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Yes, you will get back the initial investment.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-advice">
+							  				Do I get assistance or advice to trade?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-advice">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						HIGHLOW offers non-specific industry news and market advice via facebook and twitter. Please feel free to browse those pages. The links are available via www.highlow.net. There is currently no daily advice going out in the form of emails. As a general rule of thumb, information regarding index and currency are readily available online. If we decide to run advice emails, tutorials and videos, all clients will be notified via email.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-max-transaction-amount">
+							  				What is the maximum transaction amount (option price) for every trade?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-max-transaction-amount">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						It is $1000 AUD or USD.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-what-max-investment-amount">
+							  				What is the maximum investment amount for any one particular option?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-what-max-investment-amount">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						It is $20,000 AUD.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-what-error-means">
+							  				When I tried to purchase an option, an error message popped up saying “Your purchase order has been cancelled due to changes in the price”. What does it mean?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-what-error-means">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Our system is set up to turn down orders where rates change at the time of purchase, to protect investors who may not be able to execute transactions at the intended price.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-which-time-zone">
+							  				Which time zone do I refer to for the expiry time?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-which-time-zone">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The time zone we refer to for the expiry time is AEST/ADEST. The system will automatically shift to your local computer time.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-what-are-different-option-durations">
+							  				What are the different option durations?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-what-are-different-option-durations">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Please refer to the <a href="option-schedules.html">option schedule page</a>.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-how-many-option-types">
+							  				How many option types are there?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-how-many-option-types">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						We offer three option types Spread HIGHLOW, HIGHLOW and Option on Demand.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-when-purchase-option">
+							  				When can I purchase an option with a new expiry time?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-when-purchase-option">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Please refer to the <a href="option-schedules.html">option schedule page</a>.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header" data-toggle="collapse" data-target="#trading-how-long-can-I-trade">
+							  				How long can I trade these options?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse" id="trading-how-long-can-I-trade">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Please refer to the trading platform for end trading time.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Can I trade options just before the expiry time?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No. Please note that you can neither purchase nor close after the deadline/cutoff where trading is ceased but the option has not yet expired.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What is a contract rate?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						It refers to the rate at the time an option is purchased. It is equivalent to an exercise rate for normal options.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What is an expiry rate?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The rate at which the option expires.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Where can I see the expiry rates?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Please refer to the expiry rates page on our website.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Who is the distributor of the rates displayed under HIGH/LOW?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						All rates displayed by HIGHLOW are distributed by our third party feed provider Leverate.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				How are rates displayed?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						HIGHLOW rates are displayed up to a maximum of 5 decimal points. (i.e. one tenth of 1 point)
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Will rates be the same for options on the same instrument?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No, they do not always coincide. Although rates are delivered based on market conditions, HIGHLOW adopts a system where rate information is individually delivered for each option. As a result, rates may not coincide due to time lags in updates or other causes. With HIGHLOW, even if there are simultaneous options on the same instrument, payout rates are different and set individually; that is, we treat them as separate options.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Are individual options on the same instrument guaranteed to have the same expiry rate?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						No, they are not guaranteed to be the same. HIGHLOW, adopts a system where rate information is individually delivered for each option. Even if there are options on the same instrument, payout rates are set individually; that is, we treat them as separate options.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				How are the expiry rates determined?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Rates used are the rates delivered by our third party feed provider Leverate, HIGHLOW takes no part in the determination of expiry rates.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Can I trade on weekends?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Transactions with HIGHLOW may only be executed in accordance with our <a href="option-schedules.html">option schedule</a>
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What are the payouts?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Payouts vary between options. Please make sure that you confirm the payout on the trade platform before purchasing.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What type of payout am I entitled to when trading HIGHLOW?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						If the option you purchase closes in-the-money at the time of expiry, you are entitled to the payout associated with that particular option.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				When exiting a trade early, how is the payout determined?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The payout is determined by the pricing algorithm which is based on a number of factors including, the time left to expiry and the implied volatility of the underlying asset.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What kind of information is displayed under &ldquo;My Trade Actions&rdquo; on the trading screen?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						The complete details of your last 5 transactions will be displayed here. These include Asset, Strike Price, Purchase Time, Status, Expiry Time, Closing Rate, Investment Amount and Payout Amount.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Can I trade on my smartphone?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						Yes, you can trade on both Apple &amp; Android devices with HIGHLOW apps <a href="app-page.html">here</a>.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Does logging in simultaneously from both live and demo trading platforms affect anything?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						It is not recommended to login simultaneously from both live and demo trading platforms since this may result in a service failure.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What is the minimum transaction amount (option price) for every trade?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+							  						It is $10.00 AUD
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Is there a limit on the number of purchases that can be made for each option?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													You can trade unlimited amount of options up to AUD $15,000 per option. (NB $20,000 above)
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Do you do 1 minute options?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													Yes, we offer a choice of options to match your preferences.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What is a stale rate?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													When processing a trade there are times when a delay occurs, i.e. the rate shown being different to the actual rate at the time, hence the stale rate error message. After a few seconds the new rate will refresh and the current rate will be once again available. 
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Why was my trade cancelled?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													There are many reasons. The most common is that the feed is lagged with some latency issue and is not current or there is an issue with the feed and it is offline or not updating. Under these circumstances HIGHLOW reserves the right to cancel these trades.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Why was my credit card payment not accepted?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													In most instances, you should contact your financial institution for answers. Obviously, if your card is dishonoured or overdrawn, the payment will be rejected.  Likewise, If a card has been reported lost or stolen the payment will not be accepted.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  	</div>
+							  	<div class="tab-pane" id="general">
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Can I withdraw and/or deposit from overseas banks?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													Yes. When you set up your account, you will be required to provide your correct bank details to deposit or receive funds. As HIGHLOW has an Australian bank account, fees will apply for overseas transfers. Please contact your bank for details of these charges. Please note that HIGHLOW can transfer funds in AUD or Japanese Yen and your account needs to be denominated in these currencies.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				I only have internet explorer 8 on my computer and could not access the demo account. If I opened an account will I be able to trade with my computer (internet explorer 8?)
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													To avoid any problems, we recommend that you update to the latest version of Internet Explorer.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What is the minimum software requirement for the HIGH?LOW web based trading platform?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													We recommend that you use the latest version of your preferred browser.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				Can I login to multiple computers at the same time?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													No, the system only allows one login.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What is the minimum computer requirement for the HIGHLOW trading platform?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													We recommend a CPU above Pentium 500MHz.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What is the minimum requirement for HIGHLOW on a smartphone?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													For iPhone, iPod Touch and iPad, iOS 4.0 or later. HIGHLOW for Android, 2.2, 2.3, 2.4, 3.0, 3.1, 3.2.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				What are your trading hours, is it the same as your office hours?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													Our trading hours are 9:00am Monday Morning to 8:00am Saturday Morning AEST. Please check our option schedule to see which options are available. Our office hours are 8:00am to 6pm Monday to Friday.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  		<div class="expandable">
+							  			<div class="expandable-header">
+							  				How do I download Trade Actions Report?
+							  				<div class="plus">
+							  					<div class="vertical">
+							  					</div>
+							  					<div class="horizontal">
+							  					</div>
+							  				</div>
+							  			</div>
+							  			<div class="expandable-content-wrapper collapse">
+							  				<div class="expandable-content main-cont">
+							  					<p>
+													Go to trade actions report, located below account balance after logging in. Select trade actions tab, set the dates you wish to see from the report and then click on the PDF icon to download.
+							  					</p>
+							  				</div>
+							  			</div>
+							  		</div>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3">
+				<div class="side-bar headed-list">
+				 	<h3 class="header">
+				 		HELP CENTRE
+				 	</h3>
+				 	<ul>
+				 		<li>
+				 			<a href="#child-section-one">
+				 				How-to-guide
+				 			</a>
+				 		</li>
+				 		<li class='active'>
+				 			<a href="#child-section-two">
+				 				FAQ's
+				 			</a>
+				 		</li>
+				 		<li>
+				 			<a href="#child-section-three">
+				 				Videos
+				 			</a>
+				 		</li>
+				 		<li>
+				 			<a href="#child-section-four">
+				 				Affiliated help
+				 			</a>
+				 		</li>
+				 	</ul>
+				</div>
+				
+				<div class="block-cta">
+	<div class="icon">
+		<img src="public/images/help-cta.png" />
+	</div>
+	<h3 class="title">
+		NEED SOME HELP?
+	</h3>
+	<a href="faq.html" class="btn btn-alternate btn-lg btn-extruded">
+		READ OUR FAQS
+	</a>
+</div>
+<div class="block-cta">
+	<div class="icon">
+		<img src="public/images/highlow-cta.png" />
+	</div>
+	<h3 class="title">
+		READY FOR ACTION?
+	</h3>
+	<a href="trade-platform.html" class="btn btn-alternate btn-lg btn-extruded">
+		TRADE NOW
+	</a>
+</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+        <footer>
+	<div class="container-fluid kapitall-block">
+		<div class="clearfix kapitall-strip">
+	<div class="testi faded fade-able">
+	    <ul class="tcycle" data-fx="scroll" data-easing="" data-speed="750" data-timeout="3000">
+	    	<li class="first">
+	    		<h3><em>&ldquo;Binary trading lorem ipsum dolor sit amet!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li>
+	    		<h3><em>&ldquo;Re-inventing Binary Trading!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li>
+	    		<h3><em>&ldquo;Teaem cloer gekog Binary Trading!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    	<li> 
+	    		<h3><em>&ldquo;Tires fedora core Binary Trading ubuntu nodejs!&rdquo;</em></h3> <img src="public/images/wired.png"/>
+	    	</li>
+	    </ul>
+	</div>
+	<div class="rotating-strip fade-able">
+		<ul>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/EUR 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				GBP/USD 10-min <span class="icon price-up"></span> 95.69% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+			<li>
+				JPY/AUD 5-min <span class="icon price-down"></span> 86.30% Return
+			</li>
+			<li>
+				JPY/USD 10-min <span class="icon price-up"></span> 87.65% Return
+			</li>
+		</ul>
+		<div id="rotating-strip-edge-left" class="icon">
+		</div>
+		<div id="rotating-strip-edge-right" class="icon">
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="container">
+		<div class="clearfix">
+			<div class="affiliation-wrapper">
+				<div class="affiliation">
+					<h3>
+						Lorem ipsum
+					</h3>
+					<div class="clearfix">
+						<div class="icon visa">
+						</div>
+						<div class="icon master">
+						</div>
+						<div class='icon neteller'>
+						</div>
+					</div>
+				</div>
+				<div class="affiliation">
+					<h3>
+						Lorem ipsum
+					</h3>
+					<div class="clearfix">
+						<div class="icon nab">
+						</div>
+						<div class="icon smbc">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-cta-wrapper">
+				<a href="" class="block" id="affiliate-login">
+					Affiliates login <img src="public/images/affiliate-icon.png"/>
+				</a>
+				<div id="footer-mobile-app-cta-mobile" class="">
+					<h3 class="block header">Download HighLow for your mobile</h3>
+					<div class="clearfix">
+						<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus" id="footer-android-icon" class="icon block pull-left">
+							Android
+						</a>
+						<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8" id="footer-apple-icon" class="icon block pull-right">
+							App Store
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="col-xs-12 keyline">
+			</div>
+			<div class="row-sm">
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Binary options</h4>
+					<ul>
+						<li>
+							<a href="highlow.html">
+								HIGHLOW
+							</a>
+						</li>
+						<li>
+							<a href="why-highlow.html">
+								Why HighLow?
+							</a>
+						</li>
+						<li>
+							<a href="contact-us.html">
+								Contact Us
+							</a>
+						</li>
+						<li>
+							<a href="">
+								The HighLow advantage
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Our experience
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Start trading</h4>
+					<ul>
+						<li>
+							<a href="trade-platform.html">
+								Access Trading area
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#demo-signup-popup">
+								Access full demo
+							</a>
+						</li>
+						<li>
+							<a href="signup-form.html">
+								Join now
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#signin-popup">
+								Log in
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Resources</h4>
+					<ul>
+						<li>
+							<a href="about.html">About us</a>
+						</li>
+			            <li>
+			            	<a href="how-to-trade.html">How to trade</a>
+			            </li>
+			            <li>
+			            	<a href="faq.html">FAQ&rsquo;s</a>
+			            </li>
+			            <li>
+			            	<a href="expiry-rate.html">Expiry rates</a>
+			            </li>
+			            <li>
+			            	<a href="blog.html">Blog</a>
+			            </li>
+			            <li>
+			            	<a href="option-schedules.html">Options Schedules</a>
+			            </li>
+			            <li>
+			            	<a href="app-page.html">Apps Download</a>
+			            </li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-sm">
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Downloads</h4>
+					<ul>
+						<li>
+							<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8">
+								iPhone app
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus">
+								Android app
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Financial Services guide
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Download item A
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Download item B
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="headed-list small-text pull-left">
+					<h4 class="header block">Legals</h4>
+					<ul>
+						<li>
+							<a href="">
+								Privacy Policy
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Disclaimer
+							</a>
+						</li>
+						<li>
+							<a href="">
+								Terms and conditions
+							</a>
+						</li>
+						<li>
+							<a href="contact-us.html">
+								Contact Highlow
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer-mobile-app-cta" class="pull-right">
+				<h3 class="block header">Download HighLow for your mobile</h3>
+				<div class="clearfix">
+					<a href="https://play.google.com/store/apps/details?id=com.marketspulse.highlowaus" id="footer-android-icon" class="icon block pull-left" id="footer-android-icon" class="icon block pull-left">
+						Android
+					</a>
+					<a href="https://itunes.apple.com/us/app/highlow-binary-options/id762015915?mt=8" id="footer-apple-icon" class="icon block pull-right">
+						App Store
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			<h5>
+				General Advice Disclaimer
+			</h5>
+			<small>
+				This website is published and owned by Realtime Capital Markets Pty Ltd (ACN 143 553 628), holder of Australian Financial Services Licence number 364264. This licence authorises the licensee to carry on a financial services business in Australia, limited to providing the financial services covered by the licence. The products and services described on this site is not available for residents in countries where such distribution is not permitted by the laws of the country. The information contained in this website is of a general nature only, and does not take into account your personal circumstances, financial situation or needs. Dealing in binary options and our other over-the-counter derivative products carries significant risk, and you may lose all of your initial investments and in some cases, other than binary options, you may also incur losses that exceed your initial investments. You should read the Product Disclosure Statement for binary options dated 01/11/2013, the Financial Services Guide and consult your own professional advisors before deciding whether dealing in our financial products is suitable for you.
+			</small>
+		</div>
+	</div>
+</footer>
+        
+
+
+<script src="public/js/jquery-1.11.1.min.js"></script>
+
+<script src="public/js/isotope.pkgd.min.js"></script>
+<script src="public/js/jquery.cookie.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>
+<script src="public/js/jquery-ui.min.js"></script>
+<script src="public/js/highlow.min.js"></script>
+    </body>
+</html>

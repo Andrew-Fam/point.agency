@@ -1,0 +1,233 @@
+.hero {
+	min-height: 260px;
+	background-image: url('../images/hero-bg.png');
+	background-color: #141414;
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
+	.hero-graphic-text {
+		position: relative;
+		z-index: 1;
+	}
+	.mock {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-image: url('../images/mock-a.png');
+		background-position: center top;
+		z-index: 0;
+	}
+
+	h1 {
+		font-family: @helvetica;
+		font-size: 39px;
+		font-weight: 700;
+		position: relative;
+		z-index: 2;
+	}
+	li {
+		font-family: @neue-helvetica;
+		font-weight: 300;
+		font-size: 18px;
+	}
+	p {
+		font-family: @neue-helvetica;
+		font-weight: 300;
+		font-size: 18px;
+		letter-spacing: 0.005em;
+		b {
+			font-weight: 700;
+		}
+	}
+
+	&.a {
+		min-height: 360px;
+		.container {
+			padding-left: 22px;
+		}
+		.hero-graphic-text {
+			margin-left: -162px;
+			margin-top: -32px;
+			margin-bottom: -184px;
+		}
+		ul.hl-list {
+			position: relative;
+			z-index: 2;
+			li {
+				margin-bottom: 6px;
+				br {
+					display: none;
+				}
+			}
+		}
+		h1 {
+			margin-bottom: 25px;
+		}
+		.mock {
+			background-position: center bottom;
+			background-repeat: no-repeat;
+		}
+
+		@media (max-width: @screen-sm-max) {
+			.mock {
+				background-position: 47% 100%;
+				background-repeat: no-repeat;
+				background-size: 1201px;
+			}
+		}
+
+		@media (max-width: @phone-break-point) {
+			padding-bottom: 46px;
+			h1 {
+				font-size: 44px;
+				max-width: 7em;
+			}
+
+			.mock {
+				background-position: 49% 100%;
+				background-repeat: no-repeat;
+				background-size: 1460px;
+			}
+
+			.hero-graphic-text {
+				margin-left: -127px;
+				margin-top: -54px;
+				margin-bottom: -144px;
+				width: 423px;
+			}
+		}
+		@media (max-width: @iphone-6-h-break-point) {
+			.hl-list li {
+				margin-bottom: 6px;
+				width: 14em;
+				br.md {
+					display: block;
+				}
+			}
+		}
+		@media (max-width: @iphone-4-h-break-point) {
+			background-position: 78% 0%;
+			padding-bottom: 31px;
+			
+
+			h1 {
+				font-size: 34px;
+				max-width: 7em;
+			}
+
+			.mock {
+				background-position: 49% 100%;
+				background-repeat: no-repeat;
+				background-size: 1460px;
+			}
+			
+
+			.hl-list li {
+				width: 9em;
+				br.md {
+					display: none;
+				}
+			}
+		}
+		
+	}	
+
+	&.b {
+		text-align: center;
+		min-height: 387px;
+		.graphic-heading {
+			display: inline-block;
+		}
+		.hero-graphic-text {
+			margin-left: -162px;
+			margin-top: -55px;
+			margin-bottom: -144px;
+		}
+
+		@media (max-width: @phone-break-point) {
+			min-height: 0px;
+			padding-bottom: 110px;
+			.hero-graphic-text {
+				width: 550px;
+				margin-left: -122px;
+				margin-bottom: -109px;
+			}
+		}
+
+		@media (max-width: @iphone-4-h-break-point) {
+			.hero-graphic-text {
+				width: 400px;
+				margin-left: -98px;
+				margin-bottom: -79px;
+				margin-top: -30px;
+			}
+		}
+	}
+
+	&.signup-2 {
+		text-align: center;
+		min-height: 258px;
+
+		@media (max-width: @iphone-4-h-break-point) {
+			text-align: center;
+			min-height: 258px;
+			padding-top: 14px;
+		}
+
+		.graphic-heading {
+			display: inline-block;
+			margin-bottom: 26px;
+			@media (max-width: @iphone-4-h-break-point) {
+				margin-bottom: 10px;
+			}
+		}
+		p {
+			font-size: 16px;
+			@media (max-width: @iphone-4-h-break-point) {
+				font-size: 16px;
+				line-height: 26px;
+				max-width: 15em;
+				margin: auto;
+			}
+		}
+		.hero-graphic-text {
+			&.gold {
+				margin-top: -57px;
+				margin-left: -23px;
+				margin-bottom: -66px;
+				display: block;
+
+				@media (max-width: @iphone-4-h-break-point) {
+					width: 388px;
+					margin-left: -119px;
+				}
+			}
+			&.silver {
+				margin: 0;
+				@media (max-width: @iphone-4-h-break-point) {
+					width: 288px;
+				}
+			}
+		}
+	}
+
+	&.signup-3 {
+		background: transparent;
+		text-align: center;
+		min-height: 184px;
+		.hero-graphic-text {
+			margin-top: 55px;
+			margin-bottom: 6px;
+			max-width: 100%;
+		}
+		@media (max-width: 767px) {
+			min-height: 0px;
+			margin-bottom: 15px;
+			.hero-graphic-text {
+				margin-top: 45px;
+			}
+		}
+	}
+}

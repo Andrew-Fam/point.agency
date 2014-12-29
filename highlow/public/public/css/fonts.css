@@ -1,0 +1,8 @@
+
+	@font-face {
+	  font-family: 'DIN';
+	  src: url('../fonts/des.eot');
+	  src: url('../fonts/des.eot') format('embedded-opentype'), url('../fonts/des.svg#DIN1451StdEngschrift') format('svg'), url('../fonts/des.woff') format('woff'), url('../fonts/des.ttf') format('truetype');
+	}
+
+

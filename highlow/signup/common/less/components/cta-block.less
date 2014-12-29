@@ -1,0 +1,40 @@
+.cta-block {
+	text-align: center;
+	position: relative;
+	padding-bottom: 70px;
+	h1 {
+		font-size: 24px;
+		font-family: @neue-helvetica;
+		font-weight: 300;
+		margin-bottom: 34px;
+		b {
+			font-weight: 700;
+		}
+	}
+	.hl-primary-btn {
+		width: 100%;
+		max-width: 335px;
+		display: inline-block;
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+	br {
+		display: none;
+	}
+
+	@media (max-width: @phone-break-point) {
+		padding-bottom: 56px;
+	}
+
+	@media (max-width: 540px) {
+		br {
+			display: block;
+			clear: both;
+		}
+	}
+}
