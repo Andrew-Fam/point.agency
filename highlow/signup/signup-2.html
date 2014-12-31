@@ -37,6 +37,11 @@
 	    <link rel="stylesheet" href="common/css/main.css" media="all" />
 	</head>
 	<body>
+		<!-- preload ui images -->
+		<img src="common/images/btn-bg-hover.png" class="hidden"/>
+
+		<!-- end preload ui images -->
+
 		<!-- begin main content -->
 		
 	<header id="layout-header" class="group">
@@ -84,23 +89,31 @@
 			<div class="form-fields">
 				<div class="callout-block info">
 					<div class="row">
-						<div class="col-sm-4 info-field firstname">
-							<label>
-								First name:
-							</label>
-							Jon Viner
-						</div>
-						<div class="col-sm-4 info-field email">
-							<label>
-								Email address:
-							</label>
-							jviner@gmail.com
-						</div>
-						<div class="col-sm-4 info-field currency">
-							<label>
-								Account currency:
-							</label>
-							USD
+						<div class="info-fields-wrapper">
+							<div class="info-fields">
+								<div class="info-field firstname">
+									<label>
+										First name:
+									</label>
+									<div class="value">
+										Jonathan
+									</div>
+								</div><div class="info-field email">
+									<label>
+										Email address:
+									</label>
+									<div class="value">
+										jviner@gmail.com
+									</div>
+								</div><div class="info-field currency">
+									<label>
+										Account currency:
+									</label>
+									<div class="value">
+										USD
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

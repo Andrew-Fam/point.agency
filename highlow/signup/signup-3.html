@@ -37,6 +37,11 @@
 	    <link rel="stylesheet" href="common/css/main.css" media="all" />
 	</head>
 	<body>
+		<!-- preload ui images -->
+		<img src="common/images/btn-bg-hover.png" class="hidden"/>
+
+		<!-- end preload ui images -->
+
 		<!-- begin main content -->
 		
 	<header id="layout-header" class="group">
@@ -97,20 +102,25 @@
 										Driver’s License
 									</li>
 									<li>
-										Government-issued Photo ID
+										Government-issued <span class="br"></span> Photo ID
 									</li>
 								</ul>
 							</div>
 							
-
 							<form action="http://www.torrentplease.com/dropzone.php"
-class="dropzone file-uploader demo default"
+class="dropzone file-uploader demo default" method="post"
 id="photo-id-dropzone">
 	<img class="upload-icon" src="common/images/upload.png"/>
 
 	<div class="default-view view">
 		<div class="upload-instruction">Drag and drop your file</div>
-		<div class="upload-link">Or click to select from your computer/device</div>
+		<div class="upload-link hidden-xs">Or select from your computer/device</div>
+		<div class="upload-link visible-xs">Select from your device</div>
+
+		<div class="fallback">
+			<input type="file" multiple name="file" />
+      		<input type="submit" value="Upload"/>
+		</div>
 	</div>
 	
 
@@ -136,11 +146,10 @@ id="photo-id-dropzone">
 	</div>
 	<div class="preview-wrapper"></div>
 	<div class="success-view failed-view view">
-		<div class="upload-link">Add more file</div>
+		<div class="upload-link">Add another file</div>
 	</div>
 
 </form>
-
 
 							
 
@@ -157,21 +166,27 @@ id="photo-id-dropzone">
 										Bank statement
 									</li>
 									<li>
-										Water, electricity or other Utility bill
+										Water, electricity or <span class="br"></span>other utility bill
 									</li>
 									<li>
 										Phone or internet bill
 									</li>
 								</ul>
 							</div>
-							<form action="http://www.torrentplease.com/dropzone.php"
+							<form method="post" action="http://www.torrentplease.com/dropzone.php"
 class="dropzone file-uploader demo default"
 id="second-id-dropzone">
 	<img class="upload-icon" src="common/images/upload.png"/>
 
 	<div class="default-view view">
 		<div class="upload-instruction">Drag and drop your file</div>
-		<div class="upload-link">Or click to select from your computer/device</div>
+		<div class="upload-link hidden-xs">Or select from your computer/device</div>
+		<div class="upload-link visible-xs">Select from your device</div>
+
+		<div class="fallback">
+			<input type="file" multiple name="file" />
+      		<input type="submit" value="Upload"/>
+		</div>
 	</div>
 	
 
@@ -197,7 +212,7 @@ id="second-id-dropzone">
 	</div>
 	<div class="preview-wrapper"></div>
 	<div class="success-view failed-view view">
-		<div class="upload-link">Add more file</div>
+		<div class="upload-link">Add another file</div>
 	</div>
 
 </form>
@@ -233,7 +248,7 @@ id="second-id-dropzone">
 								<li class="rule">
 									<img src="common/images/blur.png" class="illustration"/>
 									<label class="caption">
-										Ensure text is legible and sharpt
+										Ensure text is legible<br/> and sharp
 									</label>
 								</li>
 							</ul>

@@ -61,10 +61,6 @@
 			letter-spacing: 0.025em;
 			border: none;
 			padding: 0;
-			@media (max-width: @phone-break-point) {
-				font-size: 16px;
-				line-height: 24px;
-			}
 			footer {
 				padding-top: 14px;
 				font-family: @neue-helvetica;
@@ -74,6 +70,16 @@
 				letter-spacing: 0.025em;
 				&:before {
 					display: none;
+				}
+			}
+			@media (max-width: @phone-break-point) {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			@media (max-width: @iphone-4-h-break-point) {
+				text-align: center;
+				footer {
+					text-align: center;
 				}
 			}
 		}

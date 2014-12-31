@@ -15,9 +15,14 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background-image: url('../images/mock-a.png');
+		@media (min-width: 481px) {
+			background-image: url('../images/mock-a.png');
+		}
 		background-position: center top;
 		z-index: 0;
+		@media (max-width: @iphone-4-h-break-point) {
+			background-image: url('../images/mock-a-mobile.png');
+		}
 	}
 
 	h1 {
@@ -71,6 +76,7 @@
 		}
 
 		@media (max-width: @screen-sm-max) {
+
 			.mock {
 				background-position: 47% 100%;
 				background-repeat: no-repeat;
@@ -108,26 +114,48 @@
 			}
 		}
 		@media (max-width: @iphone-4-h-break-point) {
-			background-position: 78% 0%;
+			background-position: center center;
+			background-size: 100% auto;
 			padding-bottom: 31px;
-			
+			text-align: center;
+			background-image: url(../images/bg-a-mobile.jpg);
+			.container {
+				padding-left: 15px;
+			}
 
 			h1 {
-				font-size: 34px;
-				max-width: 7em;
+				font-size: 24px;
+				max-width: 14em;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 12px;
 			}
 
 			.mock {
 				background-position: 49% 100%;
 				background-repeat: no-repeat;
-				background-size: 1460px;
+				background-size: 440px;
+				background-position-y: 116px;
+				display: none;
+			}
+
+			.hero-graphic-text {
+				margin-left: -120px;
 			}
 			
 
-			.hl-list li {
-				width: 9em;
-				br.md {
+			ul.hl-list {
+				li {
 					display: none;
+					padding-left: 0;
+					width: 100%;
+					&:before {
+						display: none;
+					}
+					&:first-child {
+						display: block;
+						text-align: center;
+					}
 				}
 			}
 		}
@@ -224,7 +252,7 @@
 		}
 		@media (max-width: 767px) {
 			min-height: 0px;
-			margin-bottom: 15px;
+			margin-bottom: 34px;
 			.hero-graphic-text {
 				margin-top: 45px;
 			}

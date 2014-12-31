@@ -167,7 +167,7 @@ point.uploadMock.init = function () {
 
 	function dropzoneDragenter(event) {
 		var target = $(event.target);
-
+		
 		target.addClass('dragenter')
 		console.log('Drag enter dropzone');
 	}
@@ -240,11 +240,14 @@ point.uploadMock.init = function () {
 			//this.on("sending", dropzoneSending);
 		},
 		previewsContainer: '#photo-id-dropzone .preview-wrapper',
-		// clickable: '#photo-id-dropzone .upload-link',
+		clickable: '#photo-id-dropzone .upload-link',
 		addRemoveLinks: true,
 		dictRemoveFile: '(delete)',
 		dictCancelUpload: '(cancel)',
-		dictCancelUploadConfirmation: 'Are you sure you want to cancel this file?'
+		dictCancelUploadConfirmation: 'Are you sure you want to cancel this file?',
+		fallback : function () {
+			$('#photo-id-dropzone').addClass('not-supported');
+		}
 	};
 
 	Dropzone.options.secondIdDropzone = {
@@ -281,11 +284,14 @@ point.uploadMock.init = function () {
 			//this.on("sending", dropzoneSending);
 		},
 		previewsContainer: '#second-id-dropzone .preview-wrapper',
-		// clickable: '#second-id-dropzone .upload-link',
+		clickable: '#second-id-dropzone .upload-link',
 		addRemoveLinks: true,
 		dictRemoveFile: '(delete)',
 		dictCancelUpload: '(cancel)',
-		dictCancelUploadConfirmation: 'Are you sure you want to cancel this file?'
+		dictCancelUploadConfirmation: 'Are you sure you want to cancel this file?',
+		fallback : function () {
+			$('#second-id-dropzone').addClass('not-supported');
+		}
 	};
 
 }
